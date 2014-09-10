@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="微軟正黑體" Size="9" />
+  <Class Name="SmartSchool.Customization.Data.StudentHelper">
+    <Position X="18" Y="6.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>StudentHelper.cs</FileName>
+      <HashCode>QAABCiAAAAAIDjAABAHACACBAAQABAAwAAVCA4CUAKI=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Provider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.Data.ClassHelper">
+    <Position X="12.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ClassHelper.cs</FileName>
+      <HashCode>AAAEAAgAAAAAAAAAAAEAAACBCAAAAAAAAAACAgAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Provider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.Data.CourseHelper">
+    <Position X="15.25" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>CourseHelper.cs</FileName>
+      <HashCode>AAAAAoAAAAAEAAAAAAHAABCDAAACAAAAAAACAIgAAMA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Provider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.Data.TeacherHelper">
+    <Position X="10.25" Y="8" Width="2" />
+    <TypeIdentifier>
+      <FileName>TeacherHelper.cs</FileName>
+      <HashCode>QAAAAAAEAAAACAAgAAEAAACBABAAAAABAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Provider" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.Data.SystemInformation">
+    <Position X="7.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>SystemInformation.cs</FileName>
+      <HashCode>AACAAAgAgEAAAAAAIEAAAAKAAAAAAAACgICAIIAAhAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_Provider" />
+    </ShowAsAssociation>
+    <AssociationLine Name="_Provider" Type="SmartSchool.Customization.Data.SystemInformationProvider" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="9.207" />
+        <Point X="6.062" Y="9.207" />
+        <Point X="6.062" Y="10" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="SmartSchool.Customization.Data.AccessHelper">
+    <Position X="12.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessHelper.cs</FileName>
+      <HashCode>AAFAAABAmEAAAhAAAgAEAEAACBAAABAGAAAQAQAggQI=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="StudentHelper" />
+      <Property Name="ClassHelper" />
+      <Property Name="TeacherHelper" />
+      <Property Name="CourseHelper" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="StudentHelper" Type="SmartSchool.Customization.Data.StudentHelper" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="9.441" />
+        <Point X="18" Y="9.441" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ClassHelper" Type="SmartSchool.Customization.Data.ClassHelper" FixedToPoint="true">
+      <Path>
+        <Point X="13.562" Y="8.25" />
+        <Point X="13.562" Y="6.468" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="TeacherHelper" Type="SmartSchool.Customization.Data.TeacherHelper" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.188" Y="8.25" />
+        <Point X="13.188" Y="7.76" />
+        <Point X="11.375" Y="7.76" />
+        <Point X="11.375" Y="8" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="CourseHelper" Type="SmartSchool.Customization.Data.CourseHelper" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14" Y="8.25" />
+        <Point X="14" Y="6.753" />
+        <Point X="15.25" Y="6.753" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Interface Name="SmartSchool.Customization.Data.StudentRecord">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StudentRecord.cs</FileName>
+      <HashCode>AAAARAgUAAEAxICAAAIQBAIAEAIIACAIAIgAIAAChAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ContactInfo" />
+      <Property Name="ParentInfo" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="StudentCategorys" />
+      <Property Name="AttendanceList" />
+      <Property Name="ExamScoreList" />
+      <Property Name="RewardList" />
+      <Property Name="SchoolYearEntryScoreList" />
+      <Property Name="SchoolYearSubjectScoreList" />
+      <Property Name="SemesterEntryScoreList" />
+      <Property Name="SemesterSubjectScoreList" />
+      <Property Name="UpdateRecordList" />
+      <Property Name="AttendCourseList" />
+      <Property Name="SemesterMoralScoreList" />
+      <Property Name="SemesterHistoryList" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="StudentCategorys" Type="SmartSchool.Customization.Data.CategoryInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="4.248" />
+        <Point X="6.625" Y="4.248" />
+        <Point X="6.625" Y="5.031" />
+        <Point X="8.5" Y="5.031" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ExamScoreList" Type="SmartSchool.Customization.Data.ExamScoreInfo" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="3.426" />
+        <Point X="7.5" Y="3.426" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.182" Y="0.05" Height="0.162" Width="1.058" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RewardList" Type="SmartSchool.Customization.Data.StudentExtension.RewardInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.062" Y="4.911" />
+        <Point X="5.062" Y="5.906" />
+        <Point X="2.75" Y="5.906" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SchoolYearSubjectScoreList" Type="SmartSchool.Customization.Data.StudentExtension.SchoolYearSubjectScoreInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.188" Y="1.5" />
+        <Point X="5.188" Y="0.813" />
+        <Point X="2.75" Y="0.813" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="UpdateRecordList" Type="SmartSchool.Customization.Data.StudentExtension.UpdateRecordInfo" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.938" Y="4.911" />
+        <Point X="4.938" Y="5.312" />
+        <Point X="2.75" Y="5.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="AttendCourseList" Type="SmartSchool.Customization.Data.StudentAttendCourseRecord" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.562" Y="1.5" />
+        <Point X="5.562" Y="1.125" />
+        <Point X="7.25" Y="1.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.287" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ContactInfo" Type="SmartSchool.Customization.Data.StudentExtension.ContactInfo" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.312" Y="4.91" />
+        <Point X="5.312" Y="7.531" />
+        <Point X="2.75" Y="7.531" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ParentInfo" Type="SmartSchool.Customization.Data.StudentExtension.ParentInfo" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.188" Y="4.91" />
+        <Point X="5.188" Y="6.781" />
+        <Point X="2.75" Y="6.781" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SemesterMoralScoreList" Type="SmartSchool.Customization.Data.StudentExtension.SemesterMoralScoreInfo" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.95" />
+        <Point X="2.75" Y="3.95" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SemesterHistoryList" Type="SmartSchool.Customization.Data.StudentExtension.SemesterHistory" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.438" Y="4.91" />
+        <Point X="5.438" Y="9.56" />
+        <Point X="2.75" Y="9.56" />
+      </Path>
+    </AssociationLine>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.AttendanceInfo" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\AttendanceInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIIMAAAAAAAAAEAAAAAAAAAAAACAI=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.RewardInfo" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\RewardInfo.cs</FileName>
+      <HashCode>AQAAgAAAAAAAAAAAIEAAAACAAAAUAAAAAIAAAAIECAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.UpdateRecordInfo" Collapsed="true">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\UpdateRecordInfo.cs</FileName>
+      <HashCode>AAAAIAAEAUSgwUCAgAAAAQQAEQAAIIAASAAEBAggCgA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.SemesterSubjectScoreInfo" Collapsed="true">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\SemesterSubjectScoreInfo.cs</FileName>
+      <HashCode>AAAAAAAAAEQAAAgBIMAAAAAAAAAAAAABABAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.SemesterEntryScoreInfo" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\SemesterEntryScoreInfo.cs</FileName>
+      <HashCode>AAAQAAAAAEAAAAgAIEAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.SchoolYearSubjectScoreInfo" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\SchoolYearSubjectScoreInfo.cs</FileName>
+      <HashCode>AAAAAAAAAEAAAAgAAMAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.SchoolYearEntryScoreInfo" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\SchoolYearEntryScoreInfo.cs</FileName>
+      <HashCode>AAAQAAAAAEAAAAgAAEAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.CourseRecord">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CourseRecord.cs</FileName>
+      <HashCode>AAKUAAAABAEAAACBIMAIAAAAAAAABAQAAAAAIAAAgEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="CourseCategorys" />
+      <Property Name="StudentAttendList" />
+      <Property Name="ExamScoreList" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="CourseCategorys" Type="SmartSchool.Customization.Data.CategoryInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.594" Y="4.853" />
+        <Point X="11.594" Y="5.25" />
+        <Point X="10" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="StudentAttendList" Type="SmartSchool.Customization.Data.StudentAttendCourseRecord" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="1.25" />
+        <Point X="11.25" Y="1" />
+        <Point X="9.5" Y="1" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ExamScoreList" Type="SmartSchool.Customization.Data.ExamScoreInfo" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="3.354" />
+        <Point X="9.25" Y="3.354" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.162" Width="1.108" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentAttendCourseRecord">
+    <Position X="7.25" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentAttendCourseRecord.cs</FileName>
+      <HashCode>AAAAAAAAAAEAAACAAAAAAAAAAgAAAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="SmartSchool.Customization.Data.CourseRecord" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="2" />
+        <Point X="9.5" Y="2" />
+      </Path>
+    </InheritanceLine>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.ClassRecord">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClassRecord.cs</FileName>
+      <HashCode>ACIAAAAAAECAIAAAAAAAABAAEAAAAAAAAAAAAAAAgAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ClassCategorys" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.ExamScoreInfo">
+    <Position X="7.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>StudentAttendCourseRecord.cs</FileName>
+      <HashCode>AAAAAAAABAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="SmartSchool.Customization.Data.StudentAttendCourseRecord" FixedToPoint="true">
+      <Path>
+        <Point X="8.375" Y="2.689" />
+        <Point X="8.375" Y="3" />
+      </Path>
+    </InheritanceLine>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.TeacherRecord">
+    <Position X="10.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TeacherRecord.cs</FileName>
+      <HashCode>AAAAAgQEAAAAAACAEAAACAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TeacherCategory" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="TeacherCategory" Type="SmartSchool.Customization.Data.CategoryInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.75" Y="6.741" />
+        <Point X="9.688" Y="6.741" />
+        <Point X="9.688" Y="6.238" />
+      </Path>
+    </AssociationLine>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentInformationProvider">
+    <Position X="14.5" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>StudentInformationProvider.cs</FileName>
+      <HashCode>AAABCiAAAAAAADAABAGAAAABAAQAAAAgBAQAAwCEAKI=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.CourseInformationProvider">
+    <Position X="15.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>CourseInformationProvider.cs</FileName>
+      <HashCode>AAAAAoAAAAAEAAAAAAGAABAAAAACAAAABAAAAAgAAMI=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.TeacherInformationProvider">
+    <Position X="10.25" Y="11.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>TeacherInformationProvider.cs</FileName>
+      <HashCode>QAAAAAAEAAAACAAAAAEAAAAAABAAAAABBAAAAAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.ClassInformationProvider">
+    <Position X="12.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ClassInformationProvider.cs</FileName>
+      <HashCode>AAAEAAgAAAAAAAAAAAEAAAAACAAAAAAABAAAAgAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.ContactInfo" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\ContactInfo.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAACAAAAAAAAAgACAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PermanentAddress" />
+      <Property Name="MailingAddress" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <AssociationLine Name="MailingAddress" Type="SmartSchool.Customization.Data.StudentExtension.AddressInfo" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="0.593" Y="7.812" />
+        <Point X="0.593" Y="8.706" />
+        <Point X="1.75" Y="8.706" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.027" Y="0.039" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.AddressInfo">
+    <Position X="1.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\ContactInfo.cs</FileName>
+      <HashCode>AAAAAAAAAgAAAQAAAAAAAAQAAAAAAQABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.ParentInfo" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\ParentInfo.cs</FileName>
+      <HashCode>AACCAAAACAAACAAAABAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.SystemInformationProvider">
+    <Position X="5" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>SystemInformationProvider.cs</FileName>
+      <HashCode>AAAAAAgAgAAAAAAAIEAAAAIAAAAAAAACgIAAAIAABAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.SemesterMoralScoreInfo" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\SemesterMoralScoreInfo.cs</FileName>
+      <HashCode>AAAAAAIAAEAAAAAAIEAAAAAAAAAAAACABAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.StudentExtension.SemesterHistory" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>StudentExtension\SemesterHistory.cs</FileName>
+      <HashCode>AAAAAAAAAEGAAAAAIEAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.Data.CategoryInfo">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CategoryInfo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

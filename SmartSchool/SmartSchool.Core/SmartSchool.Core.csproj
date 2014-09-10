@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartSchool</RootNamespace>
+    <AssemblyName>SmartSchool.Core</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ischool\bin\Debug\Kernel\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.BarCode, Version=2.3.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL" />
+    <Reference Include="Aspose.Cells, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9a40d5a4b59e5256, processorArchitecture=MSIL" />
+    <Reference Include="Aspose.Words, Version=4.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=7.2.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="IntelliSchool.DSA.ClientFramework, Version=1.2.2.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="IntelliSchool.DSA30.Util, Version=3.2.20.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="OnlineUpdateClient, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SkypeControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartSchool.Customization.Data, Version=1.3.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartSchool.Customization.PlugIn, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartSchool.ePaper, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\Provider\SystemProvider.cs" />
+    <Compile Include="ApplicationLog\EntityAction.cs" />
+    <Compile Include="ApplicationLog\EntityType.cs" />
+    <Compile Include="ApplicationLog\Forms\LogBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLog\Forms\LogBrowserForm.Designer.cs">
+      <DependentUpon>LogBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLog\Forms\LogDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationLog\Forms\LogDetailForm.Designer.cs">
+      <DependentUpon>LogDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationLog\GeneralActionLog.cs" />
+    <Compile Include="ApplicationLog\GeneralEntityLog.cs" />
+    <Compile Include="ApplicationLog\ILogInformation.cs" />
+    <Compile Include="ApplicationLog\InsertStudentLog.cs" />
+    <Compile Include="ApplicationLog\LogInfoBase.cs" />
+    <Compile Include="ApplicationLog\LogProvider.cs" />
+    <Compile Include="ApplicationLog\LogRecord.cs" />
+    <Compile Include="ApplicationLog\LogSender.cs" />
+    <Compile Include="ApplicationLog\LogStorageQueue.cs" />
+    <Compile Include="ApplicationLog\UpdateStudentLog.cs" />
+    <Compile Include="ButtonAdapterPlugInManager.cs" />
+    <Compile Include="ButtonItemPlugInManager.cs" />
+    <Compile Include="ConfigurationCollection.cs" />
+    <Compile Include="Configure\Configuration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configure\Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configure\ConfigurationManager.cs" />
+    <Compile Include="CurrentUser.cs" />
+    <Compile Include="DataValueManager.cs" />
+    <Compile Include="DSNSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSNSForm.Designer.cs">
+      <DependentUpon>DSNSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicPaperImp\DispatcherImp.cs" />
+    <Compile Include="ElectronicPaperImp\ElectronicPaperEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectronicPaperImp\ElectronicPaperEditor.Designer.cs">
+      <DependentUpon>ElectronicPaperEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicPaperImp\ElectronicPaperManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectronicPaperImp\ElectronicPaperManager.Designer.cs">
+      <DependentUpon>ElectronicPaperManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElectronicPaperImp\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElectronicPaperImp\ProgressForm.designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntityItem.cs" />
+    <Compile Include="Feature\ApplicationLog\Manage.cs" />
+    <Compile Include="Feature\Basic\Class.cs" />
+    <Compile Include="Feature\Basic\Config.cs" />
+    <Compile Include="Feature\Basic\Major.cs" />
+    <Compile Include="Feature\Basic\Personal.cs" />
+    <Compile Include="Feature\Class\AddClass.cs" />
+    <Compile Include="Feature\Class\ClassBulkProcess.cs" />
+    <Compile Include="Feature\Class\EditClass.cs" />
+    <Compile Include="Feature\Class\QueryClass.cs" />
+    <Compile Include="Feature\Class\RemoveClass.cs" />
+    <Compile Include="Feature\Class\SurveyProcess.cs" />
+    <Compile Include="Feature\ClientModule\Preference.cs" />
+    <Compile Include="Feature\Course\AddCourse.cs" />
+    <Compile Include="Feature\Course\CourseBulkProcess.cs" />
+    <Compile Include="Feature\Course\EditCourse.cs" />
+    <Compile Include="Feature\Course\QueryCourse.cs" />
+    <Compile Include="Feature\Course\RemoveCourse.cs" />
+    <Compile Include="Feature\Department\AddDepartment.cs" />
+    <Compile Include="Feature\Department\EditDepartment.cs" />
+    <Compile Include="Feature\Department\QueryDepartment.cs" />
+    <Compile Include="Feature\Department\RemoveDepartment.cs" />
+    <Compile Include="Feature\ePaper\EditElectronicPaper.cs" />
+    <Compile Include="Feature\ePaper\QueryElectronicPaper.cs" />
+    <Compile Include="Feature\ExamTemplate\EditTemplate.cs" />
+    <Compile Include="Feature\ExamTemplate\QueryTemplate.cs" />
+    <Compile Include="Feature\Exam\EditExam.cs" />
+    <Compile Include="Feature\Exam\QueryExam.cs" />
+    <Compile Include="Feature\FeatureBase.cs" />
+    <Compile Include="Feature\GraduationPlan\AddGraduationPlan.cs" />
+    <Compile Include="Feature\GraduationPlan\EditGraduationPlan.cs" />
+    <Compile Include="Feature\GraduationPlan\QueryGraduationPlan.cs" />
+    <Compile Include="Feature\GraduationPlan\RemoveGraduationPlan.cs" />
+    <Compile Include="Feature\LeaveOnErrorAttribute.cs" />
+    <Compile Include="Feature\Payment\EditPayment.cs" />
+    <Compile Include="Feature\Payment\QueryPayment.cs" />
+    <Compile Include="Feature\Personal.cs" />
+    <Compile Include="Feature\QueryRequestAttribute.cs" />
+    <Compile Include="Feature\ScoreCalcRule\AddScoreCalcRule.cs" />
+    <Compile Include="Feature\ScoreCalcRule\EditScoreCalcRule.cs" />
+    <Compile Include="Feature\ScoreCalcRule\QueryScoreCalcRule.cs" />
+    <Compile Include="Feature\ScoreCalcRule\RemoveScoreCalcRule.cs" />
+    <Compile Include="Feature\Score\AddScore.cs" />
+    <Compile Include="Feature\Score\EditScore.cs" />
+    <Compile Include="Feature\Score\QueryScore.cs" />
+    <Compile Include="Feature\Score\Rating\EditRating.cs" />
+    <Compile Include="Feature\Score\Rating\QueryRating.cs" />
+    <Compile Include="Feature\Score\RemoveScore.cs" />
+    <Compile Include="Feature\Security.cs" />
+    <Compile Include="Feature\Student\AddStudent.cs" />
+    <Compile Include="Feature\Student\EditAttendance.cs" />
+    <Compile Include="Feature\Student\EditDiscipline.cs" />
+    <Compile Include="Feature\Student\EditStudent.cs" />
+    <Compile Include="Feature\Student\QueryAttendance.cs" />
+    <Compile Include="Feature\Student\QueryDiscipline.cs" />
+    <Compile Include="Feature\Student\QueryStudent.cs" />
+    <Compile Include="Feature\Student\RemoveStudent.cs" />
+    <Compile Include="Feature\Student\Student.Batch.cs" />
+    <Compile Include="Feature\Student\StudentBulkProcess.cs" />
+    <Compile Include="Feature\Student\StudentSnapShop.cs" />
+    <Compile Include="Feature\SubjectTable\AddSubejctTable.cs" />
+    <Compile Include="Feature\SubjectTable\EditSubejctTable.cs" />
+    <Compile Include="Feature\SubjectTable\QuerySubejctTable.cs" />
+    <Compile Include="Feature\SubjectTable\RemoveSubejctTable.cs" />
+    <Compile Include="Feature\Survey\AddSurvey.cs" />
+    <Compile Include="Feature\Survey\EditSurvey.cs" />
+    <Compile Include="Feature\Survey\QuerySurvey.cs" />
+    <Compile Include="Feature\Survey\RemoveSurvey.cs" />
+    <Compile Include="Feature\Tag\EditClassTag.cs" />
+    <Compile Include="Feature\Tag\EditStudentTag.cs" />
+    <Compile Include="Feature\Tag\EditTag.cs" />
+    <Compile Include="Feature\Tag\EditTeacherTag.cs" />
+    <Compile Include="Feature\Tag\QueryTag.cs" />
+    <Compile Include="Feature\Tag\TagType.cs" />
+    <Compile Include="Feature\Teacher\AddTeacher.cs" />
+    <Compile Include="Feature\Teacher\EditTeacher.cs" />
+    <Compile Include="Feature\Teacher\QueryTeacher.cs" />
+    <Compile Include="Feature\Teacher\RemoveTeacher.cs" />
+    <Compile Include="Feature\Teacher\TeacherBulkProcess.cs" />
+    <Compile Include="Feature\UpdateRecordBatch\UpdateRecordBatch.cs" />
+    <Compile Include="Feedback\Common\CommentEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\Common\CommentEditor.Designer.cs">
+      <DependentUpon>CommentEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Common\NewsCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\Common\NewsCreator.Designer.cs">
+      <DependentUpon>NewsCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Common\NewsNotice.cs" />
+    <Compile Include="Feedback\Common\VoteViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\Common\VoteViewer.Designer.cs">
+      <DependentUpon>VoteViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Feature\Service.cs" />
+    <Compile Include="Feedback\Common\AuthBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\Common\AuthBox.Designer.cs">
+      <DependentUpon>AuthBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\FeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\FeedbackForm.Designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\NewsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\NewsForm.Designer.cs">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Common\PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\Common\PictureViewer.Designer.cs">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Common\UrlBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\Common\UrlBrowser.Designer.cs">
+      <DependentUpon>UrlBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\VoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback\VoteForm.Designer.cs">
+      <DependentUpon>VoteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback\Mode.cs" />
+    <Compile Include="GeneralEntityView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneralEntityView.Designer.cs">
+      <DependentUpon>GeneralEntityView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IPalmerwormManager.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="IPreference.cs" />
+    <Compile Include="IProcess.cs" />
+    <Compile Include="ISourceProvider.cs" />
+    <Compile Include="LicenseInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenseInfoForm.Designer.cs">
+      <DependentUpon>LicenseInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MotherForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotherForm.Designer.cs">
+      <DependentUpon>MotherForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PalmerwormItem.Designer.cs">
+      <DependentUpon>PalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PalmerwormItemBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PalmerwormItemBase.Designer.cs">
+      <DependentUpon>PalmerwormItemBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PalmerwormItemContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PalmerwormItemContainer.Designer.cs">
+      <DependentUpon>PalmerwormItemContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordHash.cs" />
+    <Compile Include="PreferenceCollection.cs" />
+    <Compile Include="PreferenceUpdater.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolConfig.cs" />
+    <Compile Include="SchoolInfo.cs" />
+    <Compile Include="SchoolInfoEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolInfoEditor.Designer.cs">
+      <DependentUpon>SchoolInfoEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ConfirmMsgBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ConfirmMsgBox.Designer.cs">
+      <DependentUpon>ConfirmMsgBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\FeatureAccessControl.cs" />
+    <Compile Include="Security\FeatureCatalog.cs" />
+    <Compile Include="Security\PermissionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\PermissionViewer.Designer.cs">
+      <DependentUpon>PermissionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\RoleAddForm.designer.cs">
+      <DependentUpon>RoleAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\RoleManager.Designer.cs">
+      <DependentUpon>RoleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RowFeatures\RowButtonItem.cs" />
+    <Compile Include="Security\RowFeatures\RowContentItem.cs" />
+    <Compile Include="Security\RowFeatures\RowFeature.cs" />
+    <Compile Include="Security\RowFeatures\RowReportItem.cs" />
+    <Compile Include="Security\RowFeatures\RowSystemItem.cs" />
+    <Compile Include="Security\UserAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UserAddForm.Designer.cs">
+      <DependentUpon>UserAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendRequestException.cs" />
+    <Compile Include="SkillSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SkillSchool.Designer.cs">
+      <DependentUpon>SkillSchool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SelectSurveyeeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\SelectSurveyeeType.Designer.cs">
+      <DependentUpon>SelectSurveyeeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SetExpireation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\SetExpireation.Designer.cs">
+      <DependentUpon>SetExpireation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyData.cs" />
+    <Compile Include="Survey\SurveyDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyDesigner.Designer.cs">
+      <DependentUpon>SurveyDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyeeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyeeEditor.Designer.cs">
+      <DependentUpon>SurveyeeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyeeTypeItem.cs" />
+    <Compile Include="Survey\SurveyManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyManager.Designer.cs">
+      <DependentUpon>SurveyManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\SurveyeeType.cs" />
+    <Compile Include="Survey\SurveyWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\SurveyWizard.Designer.cs">
+      <DependentUpon>SurveyWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\ApplicationToken.cs" />
+    <Compile Include="SysAdmin\LicenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\LicenseForm.Designer.cs">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\LicenseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\LicenseManager.Designer.cs">
+      <DependentUpon>LicenseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SysAdmin\SetLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SysAdmin\SetLicense.Designer.cs">
+      <DependentUpon>SetLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfig.cs" />
+    <Compile Include="UserInfomation\UserInfoManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfomation\UserInfoManager.Designer.cs">
+      <DependentUpon>UserInfoManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlBox.Designer.cs">
+      <DependentUpon>XmlBox.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\Aspose.BarCode.dll" />
+    <Content Include="Library\Aspose.BarCode.xml" />
+    <Content Include="Library\Aspose.Cells.dll" />
+    <Content Include="Library\Aspose.Cells.xml" />
+    <Content Include="Library\Aspose.Words.dll" />
+    <Content Include="Library\DevComponents.DotNetBar2.dll" />
+    <Content Include="Library\DevComponents.DotNetBar2.xml" />
+    <Content Include="Library\IntelliSchool.DSA.ClientFramework.dll" />
+    <Content Include="Library\IntelliSchool.DSA.ClientFramework.XML" />
+    <Content Include="Library\IntelliSchool.DSA30.Util.dll" />
+    <Content Include="Library\IntelliSchool.DSA30.Util.xml" />
+    <Content Include="Library\OnlineUpdateClient.dll" />
+    <Content Include="Library\SkypeControl.dll" />
+    <Content Include="Library\SmartSchool.Customization.Data.dll" />
+    <Content Include="Library\SmartSchool.Customization.Data.XML" />
+    <Content Include="Library\SmartSchool.Customization.PlugIn.dll" />
+    <Content Include="Library\SmartSchool.Customization.PlugIn.XML" />
+    <Content Include="Library\SmartSchool.ePaper.dll" />
+    <Content Include="Library\SmartSchool.ePaper.pdb" />
+    <Content Include="Library\SmartSchool.ePaper.XML" />
+    <None Include="Resources\Icon.png" />
+    <None Include="Resources\LoginLogo.png" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\emptystudent.jpg" />
+    <None Include="Resources\偷來改的齒輪.png" />
+    <None Include="Resources\expandablebuttonimageexpand.png" />
+    <None Include="Resources\expandablebuttonimagecollapse.png" />
+    <None Include="Resources\loading5.gif" />
+    <EmbeddedResource Include="IntelliSchoolRootAuthority.crt" />
+    <None Include="Resources\aspose.total.lic" />
+    <None Include="Resources\FeatureDefinition.xml" />
+    <None Include="Resources\紅箭頭.png" />
+    <None Include="Resources\寬箭頭陰影.png" />
+    <None Include="Resources\寬箭頭.png" />
+    <None Include="Resources\Mark2.png" />
+    <None Include="Resources\SmartLogo拷貝.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SmartSchool.Customization\SmartSchool.API.PlugIn\SmartSchool.API.PlugIn.csproj">
+      <Project>{35D76BEC-951F-4588-B067-21047A4447A7}</Project>
+      <Name>SmartSchool.API.PlugIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.AccessControl\SmartSchool.AccessControl.csproj">
+      <Project>{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}</Project>
+      <Name>SmartSchool.AccessControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Common.DotNetBar\SmartSchool.Common.DotNetBar.csproj">
+      <Project>{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}</Project>
+      <Name>SmartSchool.Common.DotNetBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Common\SmartSchool.Common.csproj">
+      <Project>{F3EF45B0-EBD3-4C4B-92D2-332687749E14}</Project>
+      <Name>SmartSchool.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.ExceptionHandler\SmartSchool.ExceptionHandler.csproj">
+      <Project>{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}</Project>
+      <Name>SmartSchool.ExceptionHandler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationLog\Forms\LogBrowserForm.resx">
+      <DependentUpon>LogBrowserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationLog\Forms\LogDetailForm.resx">
+      <DependentUpon>LogDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configure\Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSNSForm.resx">
+      <DependentUpon>DSNSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectronicPaperImp\ElectronicPaperEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ElectronicPaperEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectronicPaperImp\ElectronicPaperManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ElectronicPaperManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElectronicPaperImp\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\Common\AuthBox.resx">
+      <DependentUpon>AuthBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\Common\CommentEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CommentEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\Common\NewsCreator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewsCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\Common\VoteViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoteViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\NewsForm.resx">
+      <DependentUpon>NewsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\Common\PictureViewer.resx">
+      <DependentUpon>PictureViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\Common\UrlBrowser.resx">
+      <DependentUpon>UrlBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback\VoteForm.resx">
+      <DependentUpon>VoteForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralEntityView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GeneralEntityView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenseInfoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LicenseInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotherForm.resx">
+      <DependentUpon>MotherForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PalmerwormItem.resx">
+      <DependentUpon>PalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PalmerwormItemBase.resx">
+      <DependentUpon>PalmerwormItemBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PalmerwormItemContainer.resx">
+      <DependentUpon>PalmerwormItemContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolInfoEditor.resx">
+      <DependentUpon>SchoolInfoEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\ConfirmMsgBox.resx">
+      <DependentUpon>ConfirmMsgBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\PermissionViewer.resx">
+      <DependentUpon>PermissionViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\RoleAddForm.resx">
+      <DependentUpon>RoleAddForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\RoleManager.resx">
+      <DependentUpon>RoleManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UserAddForm.resx">
+      <DependentUpon>UserAddForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SkillSchool.resx">
+      <DependentUpon>SkillSchool.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\SelectSurveyeeType.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelectSurveyeeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\SetExpireation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetExpireation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\SurveyDesigner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SurveyDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\SurveyeeEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SurveyeeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\SurveyManager.resx">
+      <DependentUpon>SurveyManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\SurveyWizard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SurveyWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysAdmin\LicenseManager.resx">
+      <DependentUpon>LicenseManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SysAdmin\SetLicense.resx">
+      <DependentUpon>SetLicense.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfomation\UserInfoManager.resx">
+      <DependentUpon>UserInfoManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlBox.resx">
+      <DependentUpon>XmlBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

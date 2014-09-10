@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="微軟正黑體" Size="9" />
+  <Class Name="SmartSchool.API.PlugIn.VirtualItem">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VirtualItem.cs</FileName>
+      <HashCode>AAAACAAAAAAhQIBQAAAAAAAAAAAAAAAMAAAECQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.API.PlugIn.Export.Exporter">
+    <Position X="14.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Export\Exporter.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.API.PlugIn.Import.Importer">
+    <Position X="12.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Import\Importer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.API.PlugIn.VirtualCheckBox">
+    <Position X="8.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VirtualCheckBox.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.API.PlugIn.VirtualButton">
+    <Position X="13.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VirtualButton.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAgBQAAAAAAAIAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.API.PlugIn.VirtualCheckItem">
+    <Position X="9.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VirtualCheckItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAAABAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.API.PlugIn.VirtualRadioButton">
+    <Position X="10.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VirtualRadioButton.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SmartSchool.API.PlugIn.Import.ImportWizard">
+    <Position X="5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Import\ImportWizard.cs</FileName>
+      <HashCode>AABBABAABAgACJDAAJAQAEQAAAAAAAAAAAABAIBgABA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Options" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+  <Interface Name="SmartSchool.API.PlugIn.Export.ExportWizard">
+    <Position X="6.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Export\ExportWizard.cs</FileName>
+      <HashCode>AABBAAAABAAAABAAABAAAEQAAAAAAAAAAQAAABBAABA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Options" />
+    </ShowAsCollectionAssociation>
+  </Interface>
+</ClassDiagram>

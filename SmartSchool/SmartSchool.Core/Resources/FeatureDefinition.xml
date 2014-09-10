@@ -1,0 +1,197 @@
+﻿<FeatureDefinition>
+  <FeatureCatalog Path="學生/功能按鈕" AccessOptions="Execute,None">
+    <ButtonItem FeatureCode="Button0010" Title="新增學生"/>
+    <ButtonItem FeatureCode="Button0020" Title="儲存學生"/>
+    <ButtonItem FeatureCode="Button0030" Title="刪除學生" Color="Red"/>
+    <ButtonItem FeatureCode="Button0060" Title="獎勵" Color="yellow"/>
+    <ButtonItem FeatureCode="Button0070" Title="懲戒"/>
+    <ButtonItem FeatureCode="Button0080" Title="缺曠"/>
+    <ButtonItem FeatureCode="Button0085" Title="德行成績"/>
+    <ButtonItem FeatureCode="Button0040" Title="計算成績"/>
+    <ButtonItem FeatureCode="Button0050" Title="排名"/>
+    <ButtonItem FeatureCode="Button0090" Title="證書字號"/>
+    <ButtonItem FeatureCode="Button0092" Title="教育程度資料檔"/>
+    <ButtonItem FeatureCode="Button0095" Title="批次畢業異動"/>
+    <ButtonItem FeatureCode="Button0100" Title="類別"/>
+    <ButtonItem FeatureCode="Button0110" Title="修課"/>
+    <ButtonItem FeatureCode="Button0113" Title="課程規劃"/>
+    <ButtonItem FeatureCode="Button0116" Title="計算規則"/>
+    <ButtonItem FeatureCode="Button0120" Title="統計"/>
+    <ButtonItem FeatureCode="Button0130" Title="匯出學籍資料"/>
+    <ButtonItem FeatureCode="Button0140" Title="匯出學期科目成績"/>
+    <ButtonItem FeatureCode="Button0150" Title="匯出學期分項成績"/>
+    <ButtonItem FeatureCode="Button0160" Title="匯出學年科目成績"/>
+    <ButtonItem FeatureCode="Button0170" Title="匯出學年分項成績"/>
+    <ButtonItem FeatureCode="Button0175" Title="匯出畢業成績"/>
+    <ButtonItem FeatureCode="Button0180" Title="匯出缺曠紀錄"/>
+    <ButtonItem FeatureCode="Button0190" Title="匯出獎懲紀錄"/>
+    <ButtonItem FeatureCode="Button0200" Title="匯出異動紀錄(新生、畢業、學籍、轉入)"/>
+    <ButtonItem FeatureCode="Button0205" Title="匯出學生類別"/>
+    <ButtonItem FeatureCode="Button0210" Title="匯入學籍資料"/>
+    <ButtonItem FeatureCode="Button0220" Title="匯入學期科目成績"/>
+    <ButtonItem FeatureCode="Button0230" Title="匯入學期分項成績"/>
+    <ButtonItem FeatureCode="Button0240" Title="匯入學年科目成績"/>
+    <ButtonItem FeatureCode="Button0250" Title="匯入學年分項成績"/>
+    <ButtonItem FeatureCode="Button0260" Title="匯入缺曠紀錄"/>
+    <ButtonItem FeatureCode="Button0270" Title="匯入獎懲紀錄"/>
+    <ButtonItem FeatureCode="Button0280" Title="匯入異動紀錄(新生、畢業、學籍、轉入)"/>
+    <ButtonItem FeatureCode="Button0285" Title="匯入學生類別"/>
+    <ButtonItem FeatureCode="Button0290" Title="匯入照片"/>
+    <ButtonItem FeatureCode="Button0300" Title="查詢經緯度"/>
+    <ButtonItem FeatureCode="Button0310" Title="學生分佈圖"/>
+    <ButtonItem FeatureCode="Button0320" Title="修改歷程"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="學生/資料項目" AccessOptions="View,Edit,None">
+    <ContentItem FeatureCode="Content0010" Title="基本資料"/>
+    <ContentItem FeatureCode="Content0020" Title="學生班級資訊"/>
+    <ContentItem FeatureCode="Content0030" Title="父母親及監護人資料"/>
+    <ContentItem FeatureCode="Content0040" Title="電話資料"/>
+    <ContentItem FeatureCode="Content0050" Title="地址資料"/>
+    <ContentItem FeatureCode="Content0060" Title="缺曠紀錄"/>
+    <ContentItem FeatureCode="Content0070" Title="獎勵資料"/>
+    <ContentItem FeatureCode="Content0080" Title="懲戒資料"/>
+    <ContentItem FeatureCode="Content0090" Title="學年成績"/>
+    <ContentItem FeatureCode="Content0100" Title="學期成績"/>
+    <ContentItem FeatureCode="Content0110" Title="課程相關成績"/>
+    <ContentItem FeatureCode="Content0120" Title="德行分項成績"/>
+    <ContentItem FeatureCode="Content0130" Title="學期對照表"/>
+    <ContentItem FeatureCode="Content0140" Title="異動資料"/>
+    <ContentItem FeatureCode="Content0135" Title="畢業及離校資訊"/>
+    <ContentItem FeatureCode="Content0145" Title="畢業成績"/>
+    <ContentItem FeatureCode="Content0125" Title="電子報表"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="學生/報表" AccessOptions="Execute,None">
+    <ReportItem FeatureCode="Report0010" Title="學生個人缺曠明細"/>
+    <ReportItem FeatureCode="Report0020" Title="學生個人獎懲明細"/>
+    <ReportItem FeatureCode="Report0030" Title="歷年功過及出席統計表"/>
+    <ReportItem FeatureCode="Report0040" Title="學生學籍表"/>
+    <ReportItem FeatureCode="Report0045" Title="學年成績單"/>
+    <ReportItem FeatureCode="Report0050" Title="學期成績單"/>
+    <ReportItem FeatureCode="Report0055" Title="學期成績單(新制)"/>
+    <ReportItem FeatureCode="Report0060" Title="多學期成績單"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="班級/功能按鈕" AccessOptions="Execute,None">
+    <ButtonItem FeatureCode="Button0330" Title="新增班級"/>
+    <ButtonItem FeatureCode="Button0340" Title="儲存班級"/>
+    <ButtonItem FeatureCode="Button0350" Title="刪除班級"/>
+    <ButtonItem FeatureCode="Button0360" Title="班級升級"/>
+    <ButtonItem FeatureCode="Button0365" Title="班級開課"/>
+    <ButtonItem FeatureCode="Button0370" Title="德行加減分"/>
+    <ButtonItem FeatureCode="Button0375" Title="文字評量"/>
+    <ButtonItem FeatureCode="Button0380" Title="學生"/>
+    <ButtonItem FeatureCode="Button0390" Title="課程規劃"/>
+    <ButtonItem FeatureCode="Button0400" Title="計算規則"/>
+    <ButtonItem FeatureCode="Button0410" Title="統計"/>
+    <ButtonItem FeatureCode="Button0420" Title="匯出班級"/>
+    <ButtonItem FeatureCode="Button0430" Title="匯入班級"/>
+    <ButtonItem FeatureCode="Button0440" Title="修改歷程"/>
+    <ButtonItem FeatureCode="Button0445" Title="問卷"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="班級/資料項目" AccessOptions="View,Edit,None">
+    <ContentItem FeatureCode="Content0150" Title="班級基本資料"/>
+    <ContentItem FeatureCode="Content0160" Title="班級學生資訊"/>
+    <ContentItem FeatureCode="Content0165" Title="電子報表"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="班級/報表" AccessOptions="Execute,None">
+    <ReportItem FeatureCode="Report0070" Title="班級名條"/>
+    <ReportItem FeatureCode="Report0080" Title="班級男女統計"/>
+    <ReportItem FeatureCode="Report0090" Title="班級點名表"/>
+    <ReportItem FeatureCode="Report0100" Title="班級通訊錄"/>
+    <ReportItem FeatureCode="Report0110" Title="班級考試成績單"/>
+    <ReportItem FeatureCode="Report0120" Title="班級考試成績單(Word)"/>
+    <ReportItem FeatureCode="Report0130" Title="建議重修名單"/>
+    <ReportItem FeatureCode="Report0140" Title="學生學籍表"/>
+    <ReportItem FeatureCode="Report0145" Title="學年成績單"/>
+    <ReportItem FeatureCode="Report0150" Title="學期成績單"/>
+    <ReportItem FeatureCode="Report0155" Title="學期成績單(新制)"/>
+    <ReportItem FeatureCode="Report0160" Title="班級學生學期成績一覽表"/>
+    <ReportItem FeatureCode="Report0170" Title="多學期成績單"/>
+    <ReportItem FeatureCode="Report0180" Title="學分統計表"/>
+    <ReportItem FeatureCode="Report0190" Title="德行表現特殊學生名單"/>
+    <ReportItem FeatureCode="Report0200" Title="缺曠通知單"/>
+    <ReportItem FeatureCode="Report0210" Title="獎懲通知單"/>
+    <ReportItem FeatureCode="Report0220" Title="班級學生缺曠明細"/>
+    <ReportItem FeatureCode="Report0230" Title="班級學生獎懲明細"/>
+    <ReportItem FeatureCode="Report0240" Title="缺曠週報表 (依缺曠別統計)"/>
+    <ReportItem FeatureCode="Report0250" Title="缺曠週報表 (依節次統計)"/>
+    <ReportItem FeatureCode="Report0260" Title="獎懲週報表"/>
+    <ReportItem FeatureCode="Report0270" Title="德行成績試算表"/>
+    <ReportItem FeatureCode="Report0280" Title="德行成績總表"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="教師/功能按鈕" AccessOptions="Execute,None">
+    <ButtonItem FeatureCode="Button0450" Title="新增教師"/>
+    <ButtonItem FeatureCode="Button0460" Title="儲存教師"/>
+    <ButtonItem FeatureCode="Button0470" Title="刪除教師"/>
+    <ButtonItem FeatureCode="Button0480" Title="授課"/>
+    <ButtonItem FeatureCode="Button0490" Title="匯出教師"/>
+    <ButtonItem FeatureCode="Button0500" Title="匯入教師"/>
+    <ButtonItem FeatureCode="Button0510" Title="修改歷程"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="教師/資料項目" AccessOptions="View,Edit,None">
+    <ContentItem FeatureCode="Content0170" Title="教師基本資料"/>
+    <ContentItem FeatureCode="Content0180" Title="班級"/>
+    <ContentItem FeatureCode="Content0190" Title="教授課程"/>
+    <ContentItem FeatureCode="Content0195" Title="電子報表"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="課程/功能按鈕" AccessOptions="Execute,None">
+    <ButtonItem FeatureCode="Button0520" Title="新增課程"/>
+    <ButtonItem FeatureCode="Button0530" Title="儲存課程"/>
+    <ButtonItem FeatureCode="Button0540" Title="刪除課程"/>
+    <ButtonItem FeatureCode="Button0550" Title="成績輸入"/>
+    <ButtonItem FeatureCode="Button0560" Title="成績計算"/>
+    <ButtonItem FeatureCode="Button0570" Title="修課學生"/>
+    <ButtonItem FeatureCode="Button0580" Title="評分教師"/>
+    <ButtonItem FeatureCode="Button0590" Title="配分樣板"/>
+    <ButtonItem FeatureCode="Button0600" Title="匯出課程"/>
+    <ButtonItem FeatureCode="Button0610" Title="匯入課程"/>
+    <ButtonItem FeatureCode="Button0620" Title="修改歷程"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="課程/資料項目" AccessOptions="View,Edit,None">
+    <ContentItem FeatureCode="Content0200" Title="基本資料"/>
+    <ContentItem FeatureCode="Content0210" Title="修課學生"/>
+    <ContentItem FeatureCode="Content0215" Title="電子報表"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="課程/報表" AccessOptions="Execute,None">
+    <ReportItem FeatureCode="Report0290" Title="課程修課學生清單"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="教務作業/功能按鈕" AccessOptions="Execute,None">
+    <ButtonItem FeatureCode="Button0630" Title="函報名冊"/>
+    <!-- <ButtonItem FeatureCode="Button0640" Title="教育程度資料檔 (新生)"/> -->
+    <!-- <ButtonItem FeatureCode="Button0650" Title="教育程度資料檔 (畢業)"/> -->
+    <ButtonItem FeatureCode="Button0660" Title="評量輸入狀況"/>
+    <ButtonItem FeatureCode="Button0670" Title="計算成績"/>
+    <ButtonItem FeatureCode="Button0680" Title="補考處理"/>
+    <ButtonItem FeatureCode="Button0690" Title="重修處理"/>
+    <!-- <ButtonItem FeatureCode="Button0700" Title="批次開課"/> -->
+    <ButtonItem FeatureCode="Button0790" Title="科別對照管理"/>
+    <ButtonItem FeatureCode="Button0795" Title="學籍身分對照表"/>
+    <ButtonItem FeatureCode="Button0800" Title="評量名稱管理"/>
+    <ButtonItem FeatureCode="Button0810" Title="評分樣版管理"/>
+    <ButtonItem FeatureCode="Button0820" Title="科目中英文對照表"/>
+    <ButtonItem FeatureCode="Button0830" Title="學業成績計算規則"/>
+    <ButtonItem FeatureCode="Button0840" Title="核心科目表"/>
+    <ButtonItem FeatureCode="Button0850" Title="學程科目表"/>
+    <ButtonItem FeatureCode="Button0860" Title="班級課程規劃表"/>
+    <ButtonItem FeatureCode="Button0870" Title="通用課程規劃表"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="學務作業/功能按鈕" AccessOptions="Execute,None">
+    <ButtonItem FeatureCode="Button0705" Title="德行成績"/>
+    <ButtonItem FeatureCode="Button0710" Title="開放時間設定"/>
+    <ButtonItem FeatureCode="Button0720" Title="等第對照管理"/>
+    <ButtonItem FeatureCode="Button0730" Title="缺曠類別管理"/>
+    <ButtonItem FeatureCode="Button0740" Title="功過換算管理"/>
+    <ButtonItem FeatureCode="Button0750" Title="每日節次管理"/>
+    <ButtonItem FeatureCode="Button0760" Title="德行評語代碼表"/>
+    <ButtonItem FeatureCode="Button0765" Title="文字評量代碼表"/>
+    <ButtonItem FeatureCode="Button0770" Title="獎懲事由代碼表"/>
+    <ButtonItem FeatureCode="Button0780" Title="德行成績計算規則"/>
+  </FeatureCatalog>
+  <FeatureCatalog Path="系統/系統功能" AccessOptions="Execute,None">
+    <SystemItem FeatureCode="System0010" Title="查詢個人日誌"/>
+    <SystemItem FeatureCode="System0020" Title="查詢所有日誌"/>
+    <SystemItem FeatureCode="System0030" Title="編輯學校資訊"/>
+    <SystemItem FeatureCode="System0040" Title="變更密碼"/>
+    <SystemItem FeatureCode="System0050" Title="使用者管理"/>
+    <SystemItem FeatureCode="System0060" Title="角色權限管理"/>
+  </FeatureCatalog>
+</FeatureDefinition>

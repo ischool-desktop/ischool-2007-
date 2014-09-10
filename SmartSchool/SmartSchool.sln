@@ -1,0 +1,164 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.ExceptionHandler", "SmartSchool.ExceptionHandler\SmartSchool.ExceptionHandler.csproj", "{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Evaluation.HS", "SmartSchool.Evaluation.HS\SmartSchool.Evaluation.HS.csproj", "{93F055E7-9422-4519-A359-524783E42A9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.ArchivalImage.HS", "SmartSchool.ArchivalImage.HS\SmartSchool.ArchivalImage.HS.csproj", "{2EB9E655-8EE3-4774-96B5-FAD0336A550A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.GovernmentalDocument.HS", "SmartSchool.GovernmentalDocument.HS\SmartSchool.GovernmentalDocument.HS.csproj", "{3F5B8DB7-F3C2-49AA-B2CB-394C430502CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.AccessControl", "SmartSchool.AccessControl\SmartSchool.AccessControl.csproj", "{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Common", "SmartSchool.Common\SmartSchool.Common.csproj", "{F3EF45B0-EBD3-4C4B-92D2-332687749E14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Common.Aspose", "SmartSchool.Common.Aspose\SmartSchool.Common.Aspose.csproj", "{713F2E55-DE39-430C-B3CA-B082C5845718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Common.DotNetBar", "SmartSchool.Common.DotNetBar\SmartSchool.Common.DotNetBar.csproj", "{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ischool", "ischool\ischool.csproj", "{63399970-6A18-4662-A5A1-0F01F8781DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Broadcaster", "SmartSchool.Broadcaster\SmartSchool.Broadcaster.csproj", "{FFE183F1-D31F-4FB5-A94B-2DF6DEFF4B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Core", "SmartSchool.Core\SmartSchool.Core.csproj", "{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Core.General", "SmartSchool.Core.General\SmartSchool.Core.General.csproj", "{62CD752E-3592-40C6-A5F5-B50272A5CFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Core.HS", "SmartSchool.Core.HS\SmartSchool.Core.HS.csproj", "{1E4E0D69-E037-4ED0-ACB9-CF85945FC4A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Core.JS", "SmartSchool.Core.JS\SmartSchool.Core.JS.csproj", "{FC77E143-E0CF-4B51-82E4-E70183D61F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.API.PlugIn", "..\SmartSchool.Customization\SmartSchool.API.PlugIn\SmartSchool.API.PlugIn.csproj", "{35D76BEC-951F-4588-B067-21047A4447A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Diagnostics", "SmartSchool.Diagnostics\SmartSchool.Diagnostics.csproj", "{BC49D01B-3366-4699-AF84-8F83C751A26C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 17
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfserver.ischool.com.tw:8080/tfs/tfs2008
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\SmartSchool.Customization\\SmartSchool.API.PlugIn\\SmartSchool.API.PlugIn.csproj
+		SccProjectName1 = ../SmartSchool.Customization/SmartSchool.API.PlugIn
+		SccLocalPath1 = ..\\SmartSchool.Customization\\SmartSchool.API.PlugIn
+		SccProjectUniqueName2 = ischool\\ischool.csproj
+		SccProjectName2 = ischool
+		SccLocalPath2 = ischool
+		SccProjectUniqueName3 = SmartSchool.AccessControl\\SmartSchool.AccessControl.csproj
+		SccProjectName3 = SmartSchool.AccessControl
+		SccLocalPath3 = SmartSchool.AccessControl
+		SccProjectUniqueName4 = SmartSchool.ArchivalImage.HS\\SmartSchool.ArchivalImage.HS.csproj
+		SccProjectName4 = SmartSchool.ArchivalImage.HS
+		SccLocalPath4 = SmartSchool.ArchivalImage.HS
+		SccProjectUniqueName5 = SmartSchool.Broadcaster\\SmartSchool.Broadcaster.csproj
+		SccProjectName5 = SmartSchool.Broadcaster
+		SccLocalPath5 = SmartSchool.Broadcaster
+		SccProjectUniqueName6 = SmartSchool.Common.Aspose\\SmartSchool.Common.Aspose.csproj
+		SccProjectName6 = SmartSchool.Common.Aspose
+		SccLocalPath6 = SmartSchool.Common.Aspose
+		SccProjectUniqueName7 = SmartSchool.Common.DotNetBar\\SmartSchool.Common.DotNetBar.csproj
+		SccProjectName7 = SmartSchool.Common.DotNetBar
+		SccLocalPath7 = SmartSchool.Common.DotNetBar
+		SccProjectUniqueName8 = SmartSchool.Common\\SmartSchool.Common.csproj
+		SccProjectName8 = SmartSchool.Common
+		SccLocalPath8 = SmartSchool.Common
+		SccProjectUniqueName9 = SmartSchool.Core.General\\SmartSchool.Core.General.csproj
+		SccProjectName9 = SmartSchool.Core.General
+		SccLocalPath9 = SmartSchool.Core.General
+		SccProjectUniqueName10 = SmartSchool.Core.HS\\SmartSchool.Core.HS.csproj
+		SccProjectName10 = SmartSchool.Core.HS
+		SccLocalPath10 = SmartSchool.Core.HS
+		SccProjectUniqueName11 = SmartSchool.Core.JS\\SmartSchool.Core.JS.csproj
+		SccProjectName11 = SmartSchool.Core.JS
+		SccLocalPath11 = SmartSchool.Core.JS
+		SccProjectUniqueName12 = SmartSchool.Core\\SmartSchool.Core.csproj
+		SccProjectName12 = SmartSchool.Core
+		SccLocalPath12 = SmartSchool.Core
+		SccProjectUniqueName13 = SmartSchool.Diagnostics\\SmartSchool.Diagnostics.csproj
+		SccProjectName13 = SmartSchool.Diagnostics
+		SccLocalPath13 = SmartSchool.Diagnostics
+		SccProjectUniqueName14 = SmartSchool.Evaluation.HS\\SmartSchool.Evaluation.HS.csproj
+		SccProjectName14 = SmartSchool.Evaluation.HS
+		SccLocalPath14 = SmartSchool.Evaluation.HS
+		SccProjectUniqueName15 = SmartSchool.ExceptionHandler\\SmartSchool.ExceptionHandler.csproj
+		SccProjectName15 = SmartSchool.ExceptionHandler
+		SccLocalPath15 = SmartSchool.ExceptionHandler
+		SccProjectUniqueName16 = SmartSchool.GovernmentalDocument.HS\\SmartSchool.GovernmentalDocument.HS.csproj
+		SccProjectName16 = SmartSchool.GovernmentalDocument.HS
+		SccLocalPath16 = SmartSchool.GovernmentalDocument.HS
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93F055E7-9422-4519-A359-524783E42A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F055E7-9422-4519-A359-524783E42A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F055E7-9422-4519-A359-524783E42A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F055E7-9422-4519-A359-524783E42A9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EB9E655-8EE3-4774-96B5-FAD0336A550A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB9E655-8EE3-4774-96B5-FAD0336A550A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB9E655-8EE3-4774-96B5-FAD0336A550A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB9E655-8EE3-4774-96B5-FAD0336A550A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5B8DB7-F3C2-49AA-B2CB-394C430502CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5B8DB7-F3C2-49AA-B2CB-394C430502CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5B8DB7-F3C2-49AA-B2CB-394C430502CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5B8DB7-F3C2-49AA-B2CB-394C430502CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EF45B0-EBD3-4C4B-92D2-332687749E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EF45B0-EBD3-4C4B-92D2-332687749E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EF45B0-EBD3-4C4B-92D2-332687749E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EF45B0-EBD3-4C4B-92D2-332687749E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713F2E55-DE39-430C-B3CA-B082C5845718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713F2E55-DE39-430C-B3CA-B082C5845718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713F2E55-DE39-430C-B3CA-B082C5845718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713F2E55-DE39-430C-B3CA-B082C5845718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63399970-6A18-4662-A5A1-0F01F8781DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63399970-6A18-4662-A5A1-0F01F8781DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63399970-6A18-4662-A5A1-0F01F8781DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63399970-6A18-4662-A5A1-0F01F8781DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE183F1-D31F-4FB5-A94B-2DF6DEFF4B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE183F1-D31F-4FB5-A94B-2DF6DEFF4B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE183F1-D31F-4FB5-A94B-2DF6DEFF4B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE183F1-D31F-4FB5-A94B-2DF6DEFF4B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62CD752E-3592-40C6-A5F5-B50272A5CFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CD752E-3592-40C6-A5F5-B50272A5CFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CD752E-3592-40C6-A5F5-B50272A5CFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CD752E-3592-40C6-A5F5-B50272A5CFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4E0D69-E037-4ED0-ACB9-CF85945FC4A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4E0D69-E037-4ED0-ACB9-CF85945FC4A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4E0D69-E037-4ED0-ACB9-CF85945FC4A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4E0D69-E037-4ED0-ACB9-CF85945FC4A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC77E143-E0CF-4B51-82E4-E70183D61F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC77E143-E0CF-4B51-82E4-E70183D61F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC77E143-E0CF-4B51-82E4-E70183D61F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC77E143-E0CF-4B51-82E4-E70183D61F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC49D01B-3366-4699-AF84-8F83C751A26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC49D01B-3366-4699-AF84-8F83C751A26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC49D01B-3366-4699-AF84-8F83C751A26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC49D01B-3366-4699-AF84-8F83C751A26C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

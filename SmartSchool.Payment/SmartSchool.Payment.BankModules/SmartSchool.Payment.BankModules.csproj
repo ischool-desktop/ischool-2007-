@@ -1,0 +1,200 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94711F26-012A-483F-AA30-8104F12BC2D8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartSchool.Payment.BankModules</RootNamespace>
+    <AssemblyName>SmartSchool.Payment.BankModules</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\SmartSchool\ischool\bin\Debug\Customize\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=7.2.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="IntelliSchool.DSA30.Util, Version=3.2.16.0, Culture=neutral, PublicKeyToken=ae00d3879ab4e918, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\IntelliSchool.DSA30.Util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chinatrust98\Algorithm\CTPostRule.cs" />
+    <Compile Include="Chinatrust98\Algorithm\CTShopRule.cs" />
+    <Compile Include="Chinatrust98\Algorithm\Utility.cs" />
+    <Compile Include="Chinatrust98\Algorithm\VirtualAccount.cs" />
+    <Compile Include="Chinatrust98\ConfigParser.cs" />
+    <Compile Include="Chinatrust98\CTBankService.cs" />
+    <Compile Include="Chinatrust98\CTBarcodeGenerator.cs" />
+    <Compile Include="Chinatrust98\CTConfigurationPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chinatrust98\CTConfigurationPanel.Designer.cs">
+      <DependentUpon>CTConfigurationPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChinatrustCommon\SequenceRecord.cs" />
+    <Compile Include="Chinatrust\Algorithm\CTPostRule.cs" />
+    <Compile Include="Chinatrust\Algorithm\CTShopRule.cs" />
+    <Compile Include="Chinatrust\Algorithm\Utility.cs" />
+    <Compile Include="Chinatrust\Algorithm\VirtualAccount.cs" />
+    <Compile Include="Chinatrust\ConfigParser.cs" />
+    <Compile Include="Chinatrust\CTBankConfigPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chinatrust\CTBankConfigPane.Designer.cs">
+      <DependentUpon>CTBankConfigPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chinatrust\CTGenerator.cs" />
+    <Compile Include="Chinatrust\CTBankService.cs" />
+    <Compile Include="FirstBank\Algorithm\FcbShopRule.cs" />
+    <Compile Include="FirstBank\Algorithm\Utility.cs" />
+    <Compile Include="FirstBank\Algorithm\VirtualAccount.cs" />
+    <Compile Include="FirstBank\ConfigParser.cs" />
+    <Compile Include="FirstBank\FcbBankConfigPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstBank\FcbBankConfigPane.designer.cs">
+      <DependentUpon>FcbBankConfigPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstBank\FcbBankService.cs" />
+    <Compile Include="FirstBank\FcbGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaiShin\TSBankConfigPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaiShin\TSBankConfigPane.Designer.cs">
+      <DependentUpon>TSBankConfigPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaiShin\TSBankService.cs" />
+    <Compile Include="Intellischool\ISBankConfigPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Intellischool\ISBankConfigPane.Designer.cs">
+      <DependentUpon>ISBankConfigPane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intellischool\ISBankService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrivateUDT\PrivateUDT.csproj">
+      <Project>{CC7992F9-E4ED-4193-B2A7-816F04D68F16}</Project>
+      <Name>PrivateUDT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Payment\SmartSchool.Payment.csproj">
+      <Project>{1327CA37-7B18-4455-B038-132F8406C89D}</Project>
+      <Name>SmartSchool.Payment</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chinatrust98\CTConfigurationPanel.resx">
+      <DependentUpon>CTConfigurationPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chinatrust\CTBankConfigPane.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CTBankConfigPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstBank\FcbBankConfigPane.resx">
+      <DependentUpon>FcbBankConfigPane.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiShin\TSBankConfigPane.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TSBankConfigPane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intellischool\ISBankConfigPane.resx">
+      <DependentUpon>ISBankConfigPane.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chinatrust\Config_Sample.xml" />
+    <Content Include="FirstBank\Config_sample.xml" />
+    <Content Include="Lib\Aspose.BarCode.dll" />
+    <Content Include="Lib\Aspose.BarCode.xml" />
+    <Content Include="Lib\Aspose.Cells.dll" />
+    <Content Include="Lib\Aspose.Cells.xml" />
+    <Content Include="Lib\Aspose.Words.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar2.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar2.xml" />
+    <Content Include="Lib\IntelliSchool.DSA30.Util.dll" />
+    <Content Include="Lib\IntelliSchool.DSA30.Util.pdb" />
+    <Content Include="Lib\IntelliSchool.DSA30.Util.xml" />
+    <Content Include="Lib\SmartSchool.Customization.Data.dll" />
+    <Content Include="Lib\SmartSchool.Customization.Data.XML" />
+    <Content Include="Lib\SmartSchool.Customization.PlugIn.dll" />
+    <Content Include="Lib\SmartSchool.Customization.PlugIn.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

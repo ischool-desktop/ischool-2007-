@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Payment", "SmartSchool.Payment\SmartSchool.Payment.csproj", "{1327CA37-7B18-4455-B038-132F8406C89D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Payment.BankModules", "SmartSchool.Payment.BankModules\SmartSchool.Payment.BankModules.csproj", "{94711F26-012A-483F-AA30-8104F12BC2D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateUDT", "PrivateUDT\PrivateUDT.csproj", "{CC7992F9-E4ED-4193-B2A7-816F04D68F16}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfserver:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SmartSchool.Payment.BankModules\\SmartSchool.Payment.BankModules.csproj
+		SccProjectName1 = SmartSchool.Payment.BankModules
+		SccLocalPath1 = SmartSchool.Payment.BankModules
+		SccProjectUniqueName2 = SmartSchool.Payment\\SmartSchool.Payment.csproj
+		SccProjectName2 = SmartSchool.Payment
+		SccLocalPath2 = SmartSchool.Payment
+		SccProjectUniqueName3 = PrivateUDT\\PrivateUDT.csproj
+		SccProjectName3 = PrivateUDT
+		SccLocalPath3 = PrivateUDT
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1327CA37-7B18-4455-B038-132F8406C89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1327CA37-7B18-4455-B038-132F8406C89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1327CA37-7B18-4455-B038-132F8406C89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1327CA37-7B18-4455-B038-132F8406C89D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94711F26-012A-483F-AA30-8104F12BC2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94711F26-012A-483F-AA30-8104F12BC2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94711F26-012A-483F-AA30-8104F12BC2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94711F26-012A-483F-AA30-8104F12BC2D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC7992F9-E4ED-4193-B2A7-816F04D68F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC7992F9-E4ED-4193-B2A7-816F04D68F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC7992F9-E4ED-4193-B2A7-816F04D68F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC7992F9-E4ED-4193-B2A7-816F04D68F16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

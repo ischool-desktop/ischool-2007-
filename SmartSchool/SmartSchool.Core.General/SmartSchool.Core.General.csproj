@@ -1,0 +1,2113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62CD752E-3592-40C6-A5F5-B50272A5CFE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartSchool</RootNamespace>
+    <AssemblyName>SmartSchool.Core.General</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\ischool\bin\Debug\Kernel\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.BarCode, Version=2.3.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL" />
+    <Reference Include="Aspose.Cells, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9a40d5a4b59e5256, processorArchitecture=MSIL" />
+    <Reference Include="Aspose.Words, Version=4.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=7.2.0.6, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DocValidate, Version=1.1.3.4, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="IntelliSchool.DSA.ClientFramework, Version=1.2.2.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="IntelliSchool.DSA30.Util, Version=3.2.20.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="OnlineUpdateClient, Version=1.0.0.10, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SkypeControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartSchool.Customization.Data, Version=1.3.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartSchool.Customization.PlugIn, Version=1.1.4.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartSchool.ePaper, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\CategoryInfo.cs" />
+    <Compile Include="API\ClassRecord.cs" />
+    <Compile Include="API\Provider\ClassProvider.cs" />
+    <Compile Include="API\Provider\FillDataEventArgs.cs" />
+    <Compile Include="API\Provider\StudentProvider.cs" />
+    <Compile Include="API\Provider\TeacherProvider.cs" />
+    <Compile Include="API\StudentExtension\Attendance.cs" />
+    <Compile Include="API\StudentExtension\Contact.cs" />
+    <Compile Include="API\StudentExtension\Parent.cs" />
+    <Compile Include="API\StudentExtension\Reward.cs" />
+    <Compile Include="API\StudentExtension\SchoolYearEntryScore.cs" />
+    <Compile Include="API\StudentExtension\SchoolYearSubjectScore.cs" />
+    <Compile Include="API\StudentExtension\SemesterEntryScore.cs" />
+    <Compile Include="API\StudentExtension\SemesterHistory.cs" />
+    <Compile Include="API\StudentExtension\SemesterMoralScore.cs" />
+    <Compile Include="API\StudentExtension\SemesterSubjectScore.cs" />
+    <Compile Include="API\StudentExtension\UpdateRecord.cs" />
+    <Compile Include="API\StudentRecord.cs" />
+    <Compile Include="API\TeacherRecord.cs" />
+    <Compile Include="ClassRelated\Class.cs" />
+    <Compile Include="ClassRelated\ClassPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\ClassPalmerwormItem.Designer.cs">
+      <DependentUpon>ClassPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\Palmerworm\ClassBaseInfoItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\Palmerworm\ClassBaseInfoItem.Designer.cs">
+      <DependentUpon>ClassBaseInfoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\ClassInfo.cs" />
+    <Compile Include="ClassRelated\ClassInfoCollection.cs" />
+    <Compile Include="ClassRelated\ClassInfoPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\ClassInfoPanel.Designer.cs">
+      <DependentUpon>ClassInfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\ClassPalmerwormFactory.cs" />
+    <Compile Include="ClassRelated\Palmerworm\ClassStudentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\Palmerworm\ClassStudentItem.Designer.cs">
+      <DependentUpon>ClassStudentItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\ClassUDMediator.cs" />
+    <Compile Include="ClassRelated\ContentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\ContentInfo.Designer.cs">
+      <DependentUpon>ContentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\Divider\GradeYearDivider.cs" />
+    <Compile Include="ClassRelated\Divider\IClassDivider.cs" />
+    <Compile Include="ClassRelated\Palmerworm\ElectronicPaperPalmerworm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\Palmerworm\ElectronicPaperPalmerworm.Designer.cs">
+      <DependentUpon>ElectronicPaperPalmerworm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\ErrorViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\ErrorViewer.Designer.cs">
+      <DependentUpon>ErrorViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\IClassPalmerwormItem.cs" />
+    <Compile Include="ClassRelated\InsertClassWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\InsertClassWizard.Designer.cs">
+      <DependentUpon>InsertClassWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\PopupClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\PopupClassForm.Designer.cs">
+      <DependentUpon>PopupClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Assign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Assign.Designer.cs">
+      <DependentUpon>Assign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\AssignConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\AssignConfirm.Designer.cs">
+      <DependentUpon>AssignConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\AssignSeatNoPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\AssignSeatNoPicker.Designer.cs">
+      <DependentUpon>AssignSeatNoPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\AttendanceStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\AttendanceStatistic.Designer.cs">
+      <DependentUpon>AttendanceStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\DemeritStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\DemeritStatistic.Designer.cs">
+      <DependentUpon>DemeritStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\DeXingStatistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\DeXingStatistic.Designer.cs">
+      <DependentUpon>DeXingStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\IDeXingExport.cs" />
+    <Compile Include="ClassRelated\RibbonBars\DeXing\MeritStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\MeritStatistic.Designer.cs">
+      <DependentUpon>MeritStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\NoAbsenceStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\NoAbsenceStatistic.Designer.cs">
+      <DependentUpon>NoAbsenceStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\StatisticWeightConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\StatisticWeightConfig.Designer.cs">
+      <DependentUpon>StatisticWeightConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\TeacherBias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\TeacherBias.Designer.cs">
+      <DependentUpon>TeacherBias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\WordComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\DeXing\WordComment.Designer.cs">
+      <DependentUpon>WordComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Export\ExportClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Export\ExportClass.Designer.cs">
+      <DependentUpon>ExportClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ImportExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ImportExport.Designer.cs">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Import\ClassImportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Import\ClassImportWizard.designer.cs">
+      <DependentUpon>ClassImportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Import\ImportDataAccess.cs" />
+    <Compile Include="ClassRelated\RibbonBars\Manage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Manage.Designer.cs">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\AbsenceDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\AbsenceDetailForm.Designer.cs">
+      <DependentUpon>AbsenceDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationConfigForm.Designer.cs">
+      <DependentUpon>AbsenceNotificationConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationReport.cs" />
+    <Compile Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationSelectDateRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationSelectDateRangeForm.Designer.cs">
+      <DependentUpon>AbsenceNotificationSelectDateRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\ClassStudentAttendanceSelectPeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\ClassStudentAttendanceSelectPeriodForm.Designer.cs">
+      <DependentUpon>ClassStudentAttendanceSelectPeriodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\DisciplineDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\DisciplineDetailForm.Designer.cs">
+      <DependentUpon>DisciplineDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\CommonMethods.cs" />
+    <Compile Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationConfigForm.Designer.cs">
+      <DependentUpon>DisciplineNotificationConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationReport.cs" />
+    <Compile Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationSelectDateRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationSelectDateRangeForm.Designer.cs">
+      <DependentUpon>DisciplineNotificationSelectDateRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\ExamScoreListSubjectSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\ExamScoreListSubjectSelector.Designer.cs">
+      <DependentUpon>ExamScoreListSubjectSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\ExamScoreListSubjectSelectorNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\ExamScoreListSubjectSelectorNew.designer.cs">
+      <DependentUpon>ExamScoreListSubjectSelectorNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\GraduationPlan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\GraduationPlan.Designer.cs">
+      <DependentUpon>GraduationPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectDateRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectDateRangeForm.Designer.cs">
+      <DependentUpon>SelectDateRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectPeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectPeriodForm.Designer.cs">
+      <DependentUpon>SelectPeriodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectTypeForm.Designer.cs">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectWeekForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Reports\SelectWeekForm.Designer.cs">
+      <DependentUpon>SelectWeekForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekAbsenceReportCountByAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekAbsenceReportCountByAbsence.Designer.cs">
+      <DependentUpon>WeekAbsenceReportCountByAbsence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekAbsenceReportCountByPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekAbsenceReportCountByPeriod.Designer.cs">
+      <DependentUpon>WeekAbsenceReportCountByPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekDisciplineReportCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekDisciplineReportCount.Designer.cs">
+      <DependentUpon>WeekDisciplineReportCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekReportCountConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\ReportForm\WeekReportCountConfig.Designer.cs">
+      <DependentUpon>WeekReportCountConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\RibbonBarBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\RibbonBarBase.Designer.cs">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Survey\ClassSurveyManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Survey\ClassSurveyManager.Designer.cs">
+      <DependentUpon>ClassSurveyManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\TeacherBias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\TeacherBias.Designer.cs">
+      <DependentUpon>TeacherBias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Upgrade.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ClassRelated\RibbonBars\Upgrade.Designer.cs">
+      <DependentUpon>Upgrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassRelated\Search\ISearchClass.cs" />
+    <Compile Include="ClassRelated\Search\SearchClassInMetadata.cs" />
+    <Compile Include="ClassRelated\SourceProvider\AllClassSourceProvider.cs" />
+    <Compile Include="ClassRelated\SourceProvider\GradeClassSourceProvider.cs" />
+    <Compile Include="ClassRelated\SourceProvider\NonGradeClassSourceProvider.cs" />
+    <Compile Include="ClassRelated\SourceProvider\TempClassSourceProvider.cs" />
+    <Compile Include="ClassRelated\SummaryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataGridViewTagCell.cs" />
+    <Compile Include="ImportSupport\CellComment.cs" />
+    <Compile Include="ImportSupport\IDataAccess.cs" />
+    <Compile Include="ImportSupport\ImportCondition.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="ImportSupport\ImportField.cs" />
+    <Compile Include="ImportSupport\ImportMode.cs" />
+    <Compile Include="ImportSupport\InheritImportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportSupport\InheritImportWizard.Designer.cs">
+      <DependentUpon>InheritImportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportSupport\IValidatorFactory.cs" />
+    <Compile Include="ImportSupport\Lookups\ClassLookup.cs" />
+    <Compile Include="ImportSupport\Lookups\DeptLookup.cs" />
+    <Compile Include="ImportSupport\Lookups\GPLookup.cs" />
+    <Compile Include="ImportSupport\Lookups\SCRLookup.cs" />
+    <Compile Include="ImportSupport\Lookups\StudentLookup.cs" />
+    <Compile Include="ImportSupport\Lookups\TeacherLookup.cs" />
+    <Compile Include="ImportSupport\Lookups\TemplateLookup.cs" />
+    <Compile Include="ImportSupport\SheetHelper.cs" />
+    <Compile Include="ImportSupport\SheetRowSource.cs" />
+    <Compile Include="ImportSupport\TipStyles.cs" />
+    <Compile Include="ImportSupport\ValidateHelper.cs" />
+    <Compile Include="ImportSupport\Validators\ClassLookupFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\CommonClasses.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="ImportSupport\Validators\CommonValidatorFactory.cs" />
+    <Compile Include="ImportSupport\Validators\DeptLookupFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\GPLookupFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\InsertDBUniqueRowValidator.cs" />
+    <Compile Include="ImportSupport\Validators\InsertSheetUniqueRowValidator.cs" />
+    <Compile Include="ImportSupport\Validators\MixDateFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\SCRLookupFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\ShiftCheckRowValidator.cs" />
+    <Compile Include="ImportSupport\Validators\TeacherLookupFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\TemplateLookupFieldValidator.cs" />
+    <Compile Include="ImportSupport\Validators\UpdateIdentifyRowValidator.cs" />
+    <Compile Include="ImportSupport\Validators\UpdateUniqueRowValidator.cs">
+      <SubType>
+      </SubType>
+    </Compile>
+    <Compile Include="ImportSupport\WizardContext.cs" />
+    <Compile Include="Others\Configuration\AbsenceMapping\AbsenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\AbsenceMapping\AbsenceForm.Designer.cs">
+      <DependentUpon>AbsenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\DegreeMapping\DegreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\DegreeMapping\DegreeForm.Designer.cs">
+      <DependentUpon>DegreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\DisciplineMapping\DisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\DisciplineMapping\DisciplineForm.Designer.cs">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\DisciplineMapping\ImportConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\DisciplineMapping\ImportConfirm.Designer.cs">
+      <DependentUpon>ImportConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\IdentityMapping\IdentityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\IdentityMapping\IdentityForm.Designer.cs">
+      <DependentUpon>IdentityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\MDReduceMapping\ReduceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\MDReduceMapping\ReduceForm.Designer.cs">
+      <DependentUpon>ReduceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\MoralityMapping\ImportConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\MoralityMapping\ImportConfirm.Designer.cs">
+      <DependentUpon>ImportConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\MoralityMapping\MoralityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\MoralityMapping\MoralityForm.Designer.cs">
+      <DependentUpon>MoralityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\PeriodMapping\PeriodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\PeriodMapping\PeriodForm.Designer.cs">
+      <DependentUpon>PeriodForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\Setup\DeptSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\Setup\DeptSetup.Designer.cs">
+      <DependentUpon>DeptSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\Setup\SubjectChineseToEnglishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\Setup\SubjectChineseToEnglishForm.Designer.cs">
+      <DependentUpon>SubjectChineseToEnglishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\Setup\SubjectChineseToEnglishImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\Setup\SubjectChineseToEnglishImport.Designer.cs">
+      <DependentUpon>SubjectChineseToEnglishImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\SimplyConfigure.cs" />
+    <Compile Include="Others\Configuration\WordCommentMapping\AddTextCommentFace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\AddTextCommentFace.Designer.cs">
+      <DependentUpon>AddTextCommentFace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\ImportConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\ImportConfirm.Designer.cs">
+      <DependentUpon>ImportConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\OverrideConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\OverrideConfirm.Designer.cs">
+      <DependentUpon>OverrideConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\TextCommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\TextCommentForm.Designer.cs">
+      <DependentUpon>TextCommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\WordCommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\Configuration\WordCommentMapping\WordCommentForm.Designer.cs">
+      <DependentUpon>WordCommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\RibbonBars\AwardScore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Others\RibbonBars\AwardScore.Designer.cs">
+      <DependentUpon>AwardScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\RibbonBars\TeacherDiffOpenConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others\RibbonBars\TeacherDiffOpenConfig.Designer.cs">
+      <DependentUpon>TeacherDiffOpenConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\RibbonBars\NameList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Others\RibbonBars\NameList.Designer.cs">
+      <DependentUpon>NameList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\RibbonBars\RibbonBarBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Others\RibbonBars\RibbonBarBase.Designer.cs">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others\RibbonBars\ScoreOpenTime.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Others\RibbonBars\ScoreOpenTime.Designer.cs">
+      <DependentUpon>ScoreOpenTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="RomanNumeral\IntToRomanConverter\HundredConverter.cs" />
+    <Compile Include="RomanNumeral\IntToRomanConverter\IIRConverter.cs" />
+    <Compile Include="RomanNumeral\IntToRomanConverter\Less5000Converter.cs" />
+    <Compile Include="RomanNumeral\IntToRomanConverter\SingleConverter.cs" />
+    <Compile Include="RomanNumeral\IntToRomanConverter\TenConverter.cs" />
+    <Compile Include="RomanNumeral\IntToRomanConverter\ThousandConverter.cs" />
+    <Compile Include="RomanNumeral\RomanToIntConverter\RomanNumeralConverter.cs" />
+    <Compile Include="RomanNumeral\Symbol.cs" />
+    <Compile Include="RomanNumeral\Util.cs" />
+    <Compile Include="StudentRelated\NavigationPlanner\StudentDividerProvider.cs" />
+    <Compile Include="StudentRelated\Palmerworm\ElectronicPaperPalmerworm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ElectronicPaperPalmerworm.Designer.cs">
+      <DependentUpon>ElectronicPaperPalmerworm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ExtensionTemplateSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ExtensionTemplateSetup.Designer.cs">
+      <DependentUpon>ExtensionTemplateSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ExtensionValuesPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ExtensionValuesPalmerwormItem.Designer.cs">
+      <DependentUpon>ExtensionValuesPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\WordCommentPalmerworm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\WordCommentPalmerworm.Designer.cs">
+      <DependentUpon>WordCommentPalmerworm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Photo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\BriefStudentData.cs" />
+    <Compile Include="StudentRelated\ChangeStatusBatch.cs" />
+    <Compile Include="StudentRelated\Common.cs" />
+    <Compile Include="StudentRelated\ContentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\ContentInfo.Designer.cs">
+      <DependentUpon>ContentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Divider\AttendanceDivider.cs" />
+    <Compile Include="StudentRelated\Divider\CategoryDivider.cs" />
+    <Compile Include="StudentRelated\Divider\ClassDivider.cs" />
+    <Compile Include="StudentRelated\Divider\DisciplineDivider.cs" />
+    <Compile Include="StudentRelated\Divider\IAttendanceItemShown.cs" />
+    <Compile Include="StudentRelated\Divider\ISetupDisciplineView.cs" />
+    <Compile Include="StudentRelated\Divider\IStudentDivider.cs" />
+    <Compile Include="StudentRelated\Divider\SelectSchoolYearSemesterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Divider\SelectSchoolYearSemesterForm.Designer.cs">
+      <DependentUpon>SelectSchoolYearSemesterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Divider\SelectTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Divider\SelectTypeForm.Designer.cs">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Divider\SetupDisciplineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Divider\SetupDisciplineForm.Designer.cs">
+      <DependentUpon>SetupDisciplineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\PalmerwormFactory.cs" />
+    <Compile Include="StudentRelated\PalmerwormStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\PalmerwormStudent.Designer.cs">
+      <DependentUpon>PalmerwormStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\AbsencePalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\AbsencePalmerwormItem.Designer.cs">
+      <DependentUpon>AbsencePalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\AddressPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\AddressPalmerwormItem.Designer.cs">
+      <DependentUpon>AddressPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\AttendanceEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\AttendanceEditor.Designer.cs">
+      <DependentUpon>AttendanceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Attendance\AbsenceInfo.cs" />
+    <Compile Include="StudentRelated\Palmerworm\Attendance\ISemesterProvider.cs" />
+    <Compile Include="StudentRelated\Palmerworm\Attendance\PeriodCollection.cs" />
+    <Compile Include="StudentRelated\Palmerworm\Attendance\PeriodInfo.cs" />
+    <Compile Include="StudentRelated\Palmerworm\BaseInfoPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\BaseInfoPalmerwormItem.Designer.cs">
+      <DependentUpon>BaseInfoPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ClassInfoPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ClassInfoPalmerwormItem.designer.cs">
+      <DependentUpon>ClassInfoPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ComboBoxAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\DateTimePickerAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\DemeritPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\DemeritPalmerwormItem.Designer.cs">
+      <DependentUpon>DemeritPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\DiplomaInfoPalmerworm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\DiplomaInfoPalmerworm.Designer.cs">
+      <DependentUpon>DiplomaInfoPalmerworm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Discipline\ClearDemerit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Discipline\ClearDemerit.Designer.cs">
+      <DependentUpon>ClearDemerit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Discipline\DemeritEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Discipline\DemeritEditor.Designer.cs">
+      <DependentUpon>DemeritEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Discipline\InsertEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\Discipline\InsertEditor.Designer.cs">
+      <DependentUpon>InsertEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\KeyConverter.cs" />
+    <Compile Include="StudentRelated\Palmerworm\LogUtility.cs" />
+    <Compile Include="StudentRelated\Palmerworm\MapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\MapForm.Designer.cs">
+      <DependentUpon>MapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\MeritPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\MeritPalmerwormItem.Designer.cs">
+      <DependentUpon>MeritPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ParentInfoPalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ParentInfoPalmerwormItem.Designer.cs">
+      <DependentUpon>ParentInfoPalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\PeriodControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\PeriodControl.Designer.cs">
+      <DependentUpon>PeriodControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\PhonePalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\PhonePalmerwormItem.Designer.cs">
+      <DependentUpon>PhonePalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\SemesterHistoryPalmerworm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\SemesterHistoryPalmerworm.Designer.cs">
+      <DependentUpon>SemesterHistoryPalmerworm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ShortSummaryPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\ShortSummaryPanel.designer.cs">
+      <DependentUpon>ShortSummaryPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\SMSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\SMSForm.Designer.cs">
+      <DependentUpon>SMSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\TagBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\TagBar.designer.cs">
+      <DependentUpon>TagBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\TeacherBiasItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\TeacherBiasItem.Designer.cs">
+      <DependentUpon>TeacherBiasItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\UpdatePalmerwormItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Palmerworm\UpdatePalmerwormItem.Designer.cs">
+      <DependentUpon>UpdatePalmerwormItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Placing\Control\ISubjectStatistic.cs" />
+    <Compile Include="StudentRelated\Placing\Control\SchoolYearEntryStatistic.cs" />
+    <Compile Include="StudentRelated\Placing\Control\SchoolYearSubjectStatistic.cs" />
+    <Compile Include="StudentRelated\Placing\Control\SemesterEntryStatistic.cs" />
+    <Compile Include="StudentRelated\Placing\Control\SemesterSubjectStatistic.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\DataFormaterFactory.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\IDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SchoolYearDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SchoolYearEntryScoreDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SchoolYearScoreDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterEntryScoreDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterScoreBestDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterScoreChoiceDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterScoreModifyDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterScoreOriginDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterScoreRepeatDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Formater\SemesterScoreResitDataFormater.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Provider\IDataProvider.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Provider\SchoolYearDataProvider.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Provider\SchoolYearEntryDataProvider.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Provider\SemesterDataProvider.cs" />
+    <Compile Include="StudentRelated\Placing\DataSource\Provider\SemesterEntryDataProvider.cs" />
+    <Compile Include="StudentRelated\Placing\DogmaticBill.cs" />
+    <Compile Include="StudentRelated\Placing\Export\ExcelExporter.cs" />
+    <Compile Include="StudentRelated\Placing\Export\ExcelSheetInfo.cs" />
+    <Compile Include="StudentRelated\Placing\Export\IExporter.cs" />
+    <Compile Include="StudentRelated\Placing\Export\IExportSheetHandler.cs" />
+    <Compile Include="StudentRelated\Placing\Export\NormalExportSheetHandler.cs" />
+    <Compile Include="StudentRelated\Placing\Export\SheetHandlerFactory.cs" />
+    <Compile Include="StudentRelated\Placing\PlaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Placing\PlaceForm.Designer.cs">
+      <DependentUpon>PlaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Placing\PlacingArg.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\PlacingInfo.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\PlacingRule\DuplicatePlacingRule.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\PlacingRule\IPlacingRule.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\PlacingRule\PlacingRuleFactory.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\PlacingRule\UnduplicatePlacingRule.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\IScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\SubjectScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\SubjectWeight.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\TotalAvgScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\TotalScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\WeightAvgScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\WeightAvgWhateverScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Rule\ScoreDependance\WeightTotalScoreDependance.cs" />
+    <Compile Include="StudentRelated\Placing\Score\StudentSemesterScoreRecord.cs" />
+    <Compile Include="StudentRelated\Placing\Score\StudentSemesterScoreRecordCollection.cs" />
+    <Compile Include="StudentRelated\Placing\Score\SubjectScore\AbstractSubjectScore.cs" />
+    <Compile Include="StudentRelated\Placing\Score\SubjectScore\ISubjectScore.cs" />
+    <Compile Include="StudentRelated\Placing\Score\SubjectScore\SimpleSubjectScore.cs" />
+    <Compile Include="StudentRelated\Placing\Score\SubjectScore\SubjectScoreCollection.cs" />
+    <Compile Include="StudentRelated\Placing\Score\SubjectScore\SuperSubjectScore.cs" />
+    <Compile Include="StudentRelated\Placing\Sorter\ScoreComparer.cs" />
+    <Compile Include="StudentRelated\Placing\Sorter\SimpleComparer.cs" />
+    <Compile Include="StudentRelated\Placing\Sorter\SorterFactory.cs" />
+    <Compile Include="StudentRelated\PopupPalmerwormStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\PopupPalmerwormStudent.Designer.cs">
+      <DependentUpon>PopupPalmerwormStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Process\StudentIUD\InsertStudentWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Process\StudentIUD\InsertStudentWizard.Designer.cs">
+      <DependentUpon>InsertStudentWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Process\StudentIUD\StudentIDUProcess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Process\StudentIUD\StudentIDUProcess.Designer.cs">
+      <DependentUpon>StudentIDUProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Assign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Assign.Designer.cs">
+      <DependentUpon>Assign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\EducationalAdministration .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\EducationalAdministration .Designer.cs">
+      <DependentUpon>EducationalAdministration .cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AcademicAffairs\DiplomaNumberCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AcademicAffairs\DiplomaNumberCreator.Designer.cs">
+      <DependentUpon>DiplomaNumberCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AcademicAffairs\LevelOfEducation.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AcademicAffairs\LevelOfEducationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AcademicAffairs\LevelOfEducationForm.Designer.cs">
+      <DependentUpon>LevelOfEducationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\AbsenceCellInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\AbsenceInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\ICellInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\ISemesterProvider.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\KeyConverter.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\MutiEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\MutiEditor.Designer.cs">
+      <DependentUpon>MutiEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\PeriodCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\PeriodInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\SemesterCellInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\SingleEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\AttendanceEditor\SingleEditor.Designer.cs">
+      <DependentUpon>SingleEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Doctrine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Doctrine.Designer.cs">
+      <DependentUpon>Doctrine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Discipline\ClearDemerit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Discipline\ClearDemerit.Designer.cs">
+      <DependentUpon>ClearDemerit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Discipline\DemeritEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Discipline\DemeritEditor.Designer.cs">
+      <DependentUpon>DemeritEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Discipline\InsertEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Discipline\InsertEditor.Designer.cs">
+      <DependentUpon>InsertEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Export\ExportAbsence.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ExportCategory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ExportDiscipline.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ExportExtandField.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ExportLeaveInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ExportUpdateRecord.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Field.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\FieldCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Formater\BaseFieldFormater.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Formater\FieldFormaterFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Formater\IFieldFormater.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\AbstractRequestGenerator.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\Condition\BaseCondition.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\Condition\ConditionFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\Condition\ICondition.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\ExportStudentRequestGenerator.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\ExportType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\IRequestGenerator.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\Orders\Order.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\RequestHandler\Generator\RequestGeneratorFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Connector\ExportClassConnector.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Connector\ExportCourseConnector.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Connector\ExportStudentConnector.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Connector\ExportTeacherConnector.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Connector\IExportConnector.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Converter\BaseConverter.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Converter\ConverterFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Converter\IConverter.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\BooleanDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\DataTypeFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\DateTimeDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\DoubleDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\IDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\IntegerDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\ObjectDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\StringDataType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\DataType\TypeProvider.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\ExportCell.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\ExportField.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\ExportFieldCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\ExportRow.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\ExportRowCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\ExportTable.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\FieldExpend.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Formater\IResponseFormater.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Formater\ResponseFormater.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Formater\ResponseFormaterFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Output\ExportOutput.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Output\IOutput.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\ResponseHandler\Output\XmlOutput.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Export\Util\FieldUtil.cs" />
+    <Compile Include="StudentRelated\RibbonBars\GMap\AddressInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\GMap\AddressMark.cs" />
+    <Compile Include="StudentRelated\RibbonBars\GMap\GMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\GMap\GMapForm.Designer.cs">
+      <DependentUpon>GMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\GMap\GMapHelper.cs" />
+    <Compile Include="StudentRelated\RibbonBars\GMap\StudentInfo.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\BatchUploadPhotoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\BatchUploadPhotoForm.Designer.cs">
+      <DependentUpon>BatchUploadPhotoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\BulkModel\BulkColumn.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\BulkModel\BulkColumnCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\BulkModel\BulkDescription.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\BulkModel\ElementGenerator.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportSemesterScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportSemesterScore.Designer.cs">
+      <DependentUpon>ExportSemesterScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportStudent.Designer.cs">
+      <DependentUpon>ExportStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportWizard.Designer.cs">
+      <DependentUpon>ExportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportAbsence.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportCategory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportDiscipline.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportExport.designer.cs">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportExtandField.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportMode.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportRecord.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportRecordCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportSemesterScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportSemesterScore.Designer.cs">
+      <DependentUpon>ImportSemesterScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportStudent.Designer.cs">
+      <DependentUpon>ImportStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\SheetModel\SheetColumn.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\SheetModel\SheetColumnCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\SheetModel\SheetReader.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\StudentImportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\StudentImportWizard.designer.cs">
+      <DependentUpon>StudentImportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\CellMessage.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\CommentOutput.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\CorrectSheetOutput.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\EnrollmentRowValidator.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\IMessageOutput.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\MessageType.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\RowMessage.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\RowValidatorFactory.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\SheetRowSource.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\ShiftCheckList.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\TipStyle.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\ValidateColumn.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ValidateModel\ValidateColumnCollection.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\WizardContext.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\XmlParseException.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportStudentV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ExportStudentV2.Designer.cs">
+      <DependentUpon>ExportStudentV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportStudentV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Import\ImportStudentV2.Designer.cs">
+      <DependentUpon>ImportStudentV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Others.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Others.Designer.cs">
+      <DependentUpon>Others.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Reports\OverTheYearsStatistics.cs" />
+    <Compile Include="StudentRelated\RibbonBars\Reports\OverTheYearsStatisticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Reports\OverTheYearsStatisticsForm.Designer.cs">
+      <DependentUpon>OverTheYearsStatisticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Reports\SelectSchoolYearSemesterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Reports\SelectSchoolYearSemesterForm.Designer.cs">
+      <DependentUpon>SelectSchoolYearSemesterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Reports\SelectTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\Reports\SelectTypeForm.Designer.cs">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\RibbonBarBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\RibbonBarBase.Designer.cs">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\TemporaStudentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\RibbonBars\TemporaStudentManager.Designer.cs">
+      <DependentUpon>TemporaStudentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Search\ISearchStudent.cs" />
+    <Compile Include="StudentRelated\Search\SearchStudentInClass.cs" />
+    <Compile Include="StudentRelated\Search\SearchStudentInDatabase.cs" />
+    <Compile Include="StudentRelated\Search\SearchStudentInGrade.cs" />
+    <Compile Include="StudentRelated\Search\SearchStudentInMetadata.cs" />
+    <Compile Include="StudentRelated\Search\SearchStudentInNormalStatus.cs" />
+    <Compile Include="StudentRelated\Search\SearchStudentInXML.cs" />
+    <Compile Include="StudentRelated\SmallCard\PhotoStudentCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\SmallCard\PhotoStudentCard.Designer.cs">
+      <DependentUpon>PhotoStudentCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\SmallCard\StudentCard.cs" />
+    <Compile Include="StudentRelated\SmallCard\StudentCardCollection.cs" />
+    <Compile Include="StudentRelated\SmallCard\StudentCardPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\SmallCard\StudentCardPanel.Designer.cs">
+      <DependentUpon>StudentCardPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\SmallCard\UCStudentCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\SmallCard\UCStudentCard.designer.cs">
+      <DependentUpon>UCStudentCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\SourceProvider\AttendanceStudentSourceProvider.cs" />
+    <Compile Include="StudentRelated\SourceProvider\DisciplineStudentSourceProvider.cs" />
+    <Compile Include="StudentRelated\SourceProvider\NormalizeStudentSourceProvider.cs" />
+    <Compile Include="StudentRelated\SourceProvider\NormalStudentSourceProvider.cs" />
+    <Compile Include="StudentRelated\Student2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\Student2.Designer.cs">
+      <DependentUpon>Student2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\StudentCollection.cs" />
+    <Compile Include="StudentRelated\StudentTagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\StudentTagEditor.designer.cs">
+      <DependentUpon>StudentTagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\StudentTagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\StudentTagForm.designer.cs">
+      <DependentUpon>StudentTagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\StudentUDMediator.cs" />
+    <Compile Include="StudentRelated\UpdateInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\UpdateInfoForm.Designer.cs">
+      <DependentUpon>UpdateInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\UpdateRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\UpdateRecordForm.Designer.cs">
+      <DependentUpon>UpdateRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\UpdateRecordInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StudentRelated\UpdateRecordInfo.Designer.cs">
+      <DependentUpon>UpdateRecordInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRelated\Validate\AbstractValidateStudent.cs" />
+    <Compile Include="StudentRelated\Validate\ValidateBasic.cs" />
+    <Compile Include="StudentRelated\Validate\ValidateClass.cs" />
+    <Compile Include="StudentRelated\Validate\ValidateGradeYear.cs" />
+    <Compile Include="StudentRelated\Validate\ValidateGraduationPlan.cs" />
+    <Compile Include="StudentRelated\Validate\ValidateScoreCalcRule.cs" />
+    <Compile Include="TagManage\EntityItem.cs" />
+    <Compile Include="TagManage\EntityItemCollection.cs" />
+    <Compile Include="TagManage\ITagCheckState.cs" />
+    <Compile Include="TagManage\Prefix.cs" />
+    <Compile Include="TagManage\PrefixCollection.cs" />
+    <Compile Include="TagManage\StateDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TagManage\StateDataGridView.designer.cs">
+      <DependentUpon>StateDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagManage\StudentTagManager.cs" />
+    <Compile Include="TagManage\TagCollection.cs" />
+    <Compile Include="TagManage\TagColor.cs" />
+    <Compile Include="TagManage\TagInfo.cs" />
+    <Compile Include="TagManage\TagManager.cs" />
+    <Compile Include="TagManage\TagMenuItem.cs" />
+    <Compile Include="TeacherRelated\BriefTeacherData.cs" />
+    <Compile Include="TeacherRelated\ContentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\ContentInfo.Designer.cs">
+      <DependentUpon>ContentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\Divider\CategoryDivider.cs" />
+    <Compile Include="TeacherRelated\Divider\ClassDivider.cs" />
+    <Compile Include="TeacherRelated\Divider\ITeacherDivider.cs" />
+    <Compile Include="TeacherRelated\PalmerwormFactory.cs" />
+    <Compile Include="TeacherRelated\PalmerwormTeacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\PalmerwormTeacher.Designer.cs">
+      <DependentUpon>PalmerwormTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\Palmerworm\BaseInfoItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\Palmerworm\BaseInfoItem.Designer.cs">
+      <DependentUpon>BaseInfoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\Palmerworm\ElectronicPaperPalmerworm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\Palmerworm\ElectronicPaperPalmerworm.Designer.cs">
+      <DependentUpon>ElectronicPaperPalmerworm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\Palmerworm\TeachStudentItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\Palmerworm\TeachStudentItem.Designer.cs">
+      <DependentUpon>TeachStudentItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\PopupPalmerwormTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\PopupPalmerwormTeacher.Designer.cs">
+      <DependentUpon>PopupPalmerwormTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\ExportTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\ExportTeacher.Designer.cs">
+      <DependentUpon>ExportTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\ImportExport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\ImportExport.Designer.cs">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\Manage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\Manage.Designer.cs">
+      <DependentUpon>Manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\Import\ImportDataAccess.cs" />
+    <Compile Include="TeacherRelated\RibbonBars\Import\TeacherImportWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\Import\TeacherImportWizard.designer.cs">
+      <DependentUpon>TeacherImportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\RibbonBarBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\RibbonBars\RibbonBarBase.Designer.cs">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRelated\Search\ISearchTeacher.cs" />
+    <Compile Include="TeacherRelated\Search\SearchTeacherInMetadata.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\AllCategorySourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\AllTeacherSourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\DeleteStatusTeacherSourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\NonCategorySourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\NormalStatusTeacherSourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\SupervisedByGradeSourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\SupervisedBySourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\TeacherCategorySourceProvider.cs" />
+    <Compile Include="TeacherRelated\SourceProvider\TempTeacherSourceProvider.cs" />
+    <Compile Include="TeacherRelated\Teacher.cs" />
+    <Compile Include="TeacherRelated\TeacherCollection.cs" />
+    <Compile Include="TeacherRelated\TeacherIUD\InsertTeacherWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRelated\TeacherIUD\InsertTeacherWizard.Designer.cs">
+      <DependentUpon>InsertTeacherWizard.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClassRelated\Palmerworm\ClassBaseInfoItem.resx">
+      <DependentUpon>ClassBaseInfoItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\ClassInfoPanel.resx">
+      <DependentUpon>ClassInfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\Palmerworm\ClassStudentItem.resx">
+      <DependentUpon>ClassStudentItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\ContentInfo.resx">
+      <DependentUpon>ContentInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\InsertClassWizard.resx">
+      <DependentUpon>InsertClassWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\PopupClassForm.resx">
+      <DependentUpon>PopupClassForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Manage.resx">
+      <DependentUpon>Manage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\RibbonBarBase.resx">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\SummaryItem.resx">
+      <DependentUpon>SummaryItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportSupport\InheritImportWizard.resx">
+      <DependentUpon>InheritImportWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\ContentInfo.resx">
+      <DependentUpon>ContentInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Divider\SelectSchoolYearSemesterForm.resx">
+      <DependentUpon>SelectSchoolYearSemesterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Divider\SelectTypeForm.resx">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Divider\SetupDisciplineForm.resx">
+      <DependentUpon>SetupDisciplineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\PalmerwormStudent.resx">
+      <DependentUpon>PalmerwormStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\AbsencePalmerwormItem.resx">
+      <DependentUpon>AbsencePalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\AddressPalmerwormItem.resx">
+      <DependentUpon>AddressPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\AttendanceEditor.resx">
+      <DependentUpon>AttendanceEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\BaseInfoPalmerwormItem.resx">
+      <DependentUpon>BaseInfoPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\ClassInfoPalmerwormItem.resx">
+      <DependentUpon>ClassInfoPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\DemeritPalmerwormItem.resx">
+      <DependentUpon>DemeritPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\DiplomaInfoPalmerworm.resx">
+      <DependentUpon>DiplomaInfoPalmerworm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\Discipline\ClearDemerit.resx">
+      <DependentUpon>ClearDemerit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\Discipline\DemeritEditor.resx">
+      <DependentUpon>DemeritEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\Discipline\InsertEditor.resx">
+      <DependentUpon>InsertEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\MapForm.resx">
+      <DependentUpon>MapForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\MeritPalmerwormItem.resx">
+      <DependentUpon>MeritPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\ParentInfoPalmerwormItem.resx">
+      <DependentUpon>ParentInfoPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\PeriodControl.resx">
+      <DependentUpon>PeriodControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\PhonePalmerwormItem.resx">
+      <DependentUpon>PhonePalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\SemesterHistoryPalmerworm.resx">
+      <DependentUpon>SemesterHistoryPalmerworm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\ShortSummaryPanel.resx">
+      <DependentUpon>ShortSummaryPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\SMSForm.resx">
+      <DependentUpon>SMSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\TagBar.resx">
+      <DependentUpon>TagBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\TeacherBiasItem.resx">
+      <DependentUpon>TeacherBiasItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\UpdatePalmerwormItem.resx">
+      <DependentUpon>UpdatePalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Placing\PlaceForm.resx">
+      <DependentUpon>PlaceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\PopupPalmerwormStudent.resx">
+      <DependentUpon>PopupPalmerwormStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Process\StudentIUD\InsertStudentWizard.resx">
+      <DependentUpon>InsertStudentWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Process\StudentIUD\StudentIDUProcess.resx">
+      <DependentUpon>StudentIDUProcess.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Assign.resx">
+      <DependentUpon>Assign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\EducationalAdministration .resx">
+      <DependentUpon>EducationalAdministration .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\AcademicAffairs\DiplomaNumberCreator.resx">
+      <DependentUpon>DiplomaNumberCreator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\AcademicAffairs\LevelOfEducationForm.resx">
+      <DependentUpon>LevelOfEducationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\AttendanceEditor\MutiEditor.resx">
+      <DependentUpon>MutiEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\AttendanceEditor\SingleEditor.resx">
+      <DependentUpon>SingleEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Doctrine.resx">
+      <DependentUpon>Doctrine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Discipline\ClearDemerit.resx">
+      <DependentUpon>ClearDemerit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Discipline\DemeritEditor.resx">
+      <DependentUpon>DemeritEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Discipline\InsertEditor.resx">
+      <DependentUpon>InsertEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\BatchUploadPhotoForm.resx">
+      <DependentUpon>BatchUploadPhotoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ExportSemesterScore.resx">
+      <DependentUpon>ExportSemesterScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ExportStudent.resx">
+      <DependentUpon>ExportStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ExportWizard.resx">
+      <DependentUpon>ExportWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ImportExport.resx">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ImportSemesterScore.resx">
+      <DependentUpon>ImportSemesterScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ImportStudent.resx">
+      <DependentUpon>ImportStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\StudentImportWizard.resx">
+      <DependentUpon>StudentImportWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Others.resx">
+      <DependentUpon>Others.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Reports\OverTheYearsStatisticsForm.resx">
+      <DependentUpon>OverTheYearsStatisticsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Reports\SelectSchoolYearSemesterForm.resx">
+      <DependentUpon>SelectSchoolYearSemesterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Reports\SelectTypeForm.resx">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\RibbonBarBase.resx">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\SmallCard\PhotoStudentCard.resx">
+      <DependentUpon>PhotoStudentCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\SmallCard\StudentCardPanel.resx">
+      <DependentUpon>StudentCardPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\SmallCard\UCStudentCard.resx">
+      <DependentUpon>UCStudentCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\StudentTagEditor.resx">
+      <DependentUpon>StudentTagEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\StudentTagForm.resx">
+      <DependentUpon>StudentTagForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\UpdateInfoForm.resx">
+      <DependentUpon>UpdateInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\UpdateRecordForm.resx">
+      <DependentUpon>UpdateRecordForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\UpdateRecordInfo.resx">
+      <DependentUpon>UpdateRecordInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagManage\StateDataGridView.resx">
+      <DependentUpon>StateDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\ContentInfo.resx">
+      <DependentUpon>ContentInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\PalmerwormTeacher.resx">
+      <DependentUpon>PalmerwormTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\Palmerworm\BaseInfoItem.resx">
+      <DependentUpon>BaseInfoItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\Palmerworm\TeachStudentItem.resx">
+      <DependentUpon>TeachStudentItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\PopupPalmerwormTeacher.resx">
+      <DependentUpon>PopupPalmerwormTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\Manage.resx">
+      <DependentUpon>Manage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\RibbonBarBase.resx">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\TeacherIUD\InsertTeacherWizard.resx">
+      <DependentUpon>InsertTeacherWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_close.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SmartSchool.Customization\SmartSchool.API.PlugIn\SmartSchool.API.PlugIn.csproj">
+      <Project>{35D76BEC-951F-4588-B067-21047A4447A7}</Project>
+      <Name>SmartSchool.API.PlugIn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.AccessControl\SmartSchool.AccessControl.csproj">
+      <Project>{60B7DF6E-E7B1-4FA8-97F0-C0F1116FBE73}</Project>
+      <Name>SmartSchool.AccessControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Broadcaster\SmartSchool.Broadcaster.csproj">
+      <Project>{FFE183F1-D31F-4FB5-A94B-2DF6DEFF4B92}</Project>
+      <Name>SmartSchool.Broadcaster</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Common.DotNetBar\SmartSchool.Common.DotNetBar.csproj">
+      <Project>{95E3A78B-044F-49B4-AF62-6D5C3F24EFC9}</Project>
+      <Name>SmartSchool.Common.DotNetBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Common\SmartSchool.Common.csproj">
+      <Project>{F3EF45B0-EBD3-4C4B-92D2-332687749E14}</Project>
+      <Name>SmartSchool.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.Core\SmartSchool.Core.csproj">
+      <Project>{69A603E2-3DCE-4BD0-9DD7-5C5F6D5E6602}</Project>
+      <Name>SmartSchool.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SmartSchool.ExceptionHandler\SmartSchool.ExceptionHandler.csproj">
+      <Project>{FADDF752-D33A-4293-ABF9-BD9A9F6364E7}</Project>
+      <Name>SmartSchool.ExceptionHandler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\Aspose.BarCode.dll" />
+    <Content Include="Library\Aspose.BarCode.xml" />
+    <Content Include="Library\Aspose.Cells.dll" />
+    <Content Include="Library\Aspose.Cells.xml" />
+    <Content Include="Library\Aspose.Words.dll" />
+    <Content Include="Library\DevComponents.DotNetBar2.dll" />
+    <Content Include="Library\DevComponents.DotNetBar2.xml" />
+    <Content Include="Library\DocValidate.dll" />
+    <Content Include="Library\IntelliSchool.DSA.ClientFramework.dll" />
+    <Content Include="Library\IntelliSchool.DSA.ClientFramework.XML" />
+    <Content Include="Library\IntelliSchool.DSA30.Util.dll" />
+    <Content Include="Library\IntelliSchool.DSA30.Util.xml" />
+    <Content Include="Library\SkypeControl.dll" />
+    <Content Include="Library\SmartSchool.Customization.Data.dll" />
+    <Content Include="Library\SmartSchool.Customization.Data.XML" />
+    <Content Include="Library\SmartSchool.Customization.PlugIn.dll" />
+    <Content Include="Library\SmartSchool.Customization.PlugIn.XML" />
+    <Content Include="Library\SmartSchool.ePaper.dll" />
+    <Content Include="Library\SmartSchool.ePaper.pdb" />
+    <Content Include="Library\SmartSchool.ePaper.XML" />
+    <Content Include="Resources\classroom_64.ico" />
+    <Content Include="Resources\elementary_school_64.ico" />
+    <Content Include="Resources\executive_64.ico" />
+    <None Include="Resources\wizard1.BackgroundImage.png" />
+    <None Include="Resources\學籍身分對照表.xml" />
+    <EmbeddedResource Include="ClassRelated\ClassPalmerwormItem.resx">
+      <DependentUpon>ClassPalmerwormItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\Palmerworm\ElectronicPaperPalmerworm.resx">
+      <DependentUpon>ElectronicPaperPalmerworm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\ErrorViewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Assign.resx">
+      <DependentUpon>Assign.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\AssignConfirm.resx">
+      <DependentUpon>AssignConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\AssignSeatNoPicker.resx">
+      <DependentUpon>AssignSeatNoPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\AttendanceStatistic.resx">
+      <DependentUpon>AttendanceStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\DemeritStatistic.resx">
+      <DependentUpon>DemeritStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\DeXingStatistic.resx">
+      <DependentUpon>DeXingStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\MeritStatistic.resx">
+      <DependentUpon>MeritStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\NoAbsenceStatistic.resx">
+      <DependentUpon>NoAbsenceStatistic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\StatisticWeightConfig.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StatisticWeightConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\TeacherBias.resx">
+      <DependentUpon>TeacherBias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\DeXing\WordComment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WordComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Export\ExportClass.resx">
+      <DependentUpon>ExportClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ImportExport.resx">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Import\ClassImportWizard.resx">
+      <DependentUpon>ClassImportWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\AbsenceDetailForm.resx">
+      <DependentUpon>AbsenceDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationConfigForm.resx">
+      <DependentUpon>AbsenceNotificationConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\AbsenceNotification\AbsenceNotificationSelectDateRangeForm.resx">
+      <DependentUpon>AbsenceNotificationSelectDateRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\DisciplineDetailForm.resx">
+      <DependentUpon>DisciplineDetailForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationConfigForm.resx">
+      <DependentUpon>DisciplineNotificationConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\DisciplineNotification\DisciplineNotificationSelectDateRangeForm.resx">
+      <DependentUpon>DisciplineNotificationSelectDateRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\ExamScoreListSubjectSelector.resx">
+      <DependentUpon>ExamScoreListSubjectSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\ExamScoreListSubjectSelectorNew.resx">
+      <DependentUpon>ExamScoreListSubjectSelectorNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\GraduationPlan.resx">
+      <DependentUpon>GraduationPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\SelectDateRangeForm.resx">
+      <DependentUpon>SelectDateRangeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\SelectPeriodForm.resx">
+      <DependentUpon>SelectPeriodForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\SelectTypeForm.resx">
+      <DependentUpon>SelectTypeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Reports\SelectWeekForm.resx">
+      <DependentUpon>SelectWeekForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\WeekAbsenceReportCountByAbsence.resx">
+      <DependentUpon>WeekAbsenceReportCountByAbsence.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\WeekAbsenceReportCountByPeriod.resx">
+      <DependentUpon>WeekAbsenceReportCountByPeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\WeekDisciplineReportCount.resx">
+      <DependentUpon>WeekDisciplineReportCount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\ReportForm\WeekReportCountConfig.resx">
+      <DependentUpon>WeekReportCountConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Survey\ClassSurveyManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ClassSurveyManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\TeacherBias.resx">
+      <DependentUpon>TeacherBias.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassRelated\RibbonBars\Upgrade.resx">
+      <DependentUpon>Upgrade.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\AbsenceMapping\AbsenceForm.resx">
+      <DependentUpon>AbsenceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\DegreeMapping\DegreeForm.resx">
+      <DependentUpon>DegreeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\DisciplineMapping\DisciplineForm.resx">
+      <DependentUpon>DisciplineForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\DisciplineMapping\ImportConfirm.resx">
+      <DependentUpon>ImportConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\IdentityMapping\IdentityForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IdentityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\MDReduceMapping\ReduceForm.resx">
+      <DependentUpon>ReduceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\MoralityMapping\ImportConfirm.resx">
+      <DependentUpon>ImportConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\MoralityMapping\MoralityForm.resx">
+      <DependentUpon>MoralityForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\PeriodMapping\PeriodForm.resx">
+      <DependentUpon>PeriodForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\Setup\DeptSetup.resx">
+      <DependentUpon>DeptSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\Setup\SubjectChineseToEnglishForm.resx">
+      <DependentUpon>SubjectChineseToEnglishForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\Setup\SubjectChineseToEnglishImport.resx">
+      <DependentUpon>SubjectChineseToEnglishImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\WordCommentMapping\AddTextCommentFace.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddTextCommentFace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\WordCommentMapping\ImportConfirm.resx">
+      <DependentUpon>ImportConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\WordCommentMapping\OverrideConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OverrideConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\WordCommentMapping\TextCommentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextCommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\Configuration\WordCommentMapping\WordCommentForm.resx">
+      <DependentUpon>WordCommentForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\RibbonBars\AwardScore.resx">
+      <DependentUpon>AwardScore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\RibbonBars\TeacherDiffOpenConfig.resx">
+      <DependentUpon>TeacherDiffOpenConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\RibbonBars\NameList.resx">
+      <DependentUpon>NameList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\RibbonBars\RibbonBarBase.resx">
+      <DependentUpon>RibbonBarBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others\RibbonBars\ScoreOpenTime.resx">
+      <DependentUpon>ScoreOpenTime.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\ElectronicPaperPalmerworm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ElectronicPaperPalmerworm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\ExtensionTemplateSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtensionTemplateSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\ExtensionValuesPalmerwormItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExtensionValuesPalmerwormItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Palmerworm\WordCommentPalmerworm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WordCommentPalmerworm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\GMap\InfoWindow.htm" />
+    <EmbeddedResource Include="StudentRelated\RibbonBars\GMap\GMapContainer.htm" />
+    <EmbeddedResource Include="StudentRelated\RibbonBars\GMap\GMapForm.resx">
+      <DependentUpon>GMapForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ExportStudentV2.resx">
+      <DependentUpon>ExportStudentV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\Import\ImportStudentV2.resx">
+      <DependentUpon>ImportStudentV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\RibbonBars\TemporaStudentManager.resx">
+      <DependentUpon>TemporaStudentManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRelated\Student2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Student2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\Palmerworm\ElectronicPaperPalmerworm.resx">
+      <DependentUpon>ElectronicPaperPalmerworm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\ExportTeacher.resx">
+      <DependentUpon>ExportTeacher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\ImportExport.resx">
+      <DependentUpon>ImportExport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\Import\TeacherImportWizard.resx">
+      <DependentUpon>TeacherImportWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRelated\RibbonBars\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\MapMale.png" />
+    <None Include="Resources\mapfemale.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\executive_64.png" />
+    <None Include="Resources\classroom_64.png" />
+    <None Include="Resources\studentsPic.jpg" />
+    <None Include="Resources\elementary_school_64.png" />
+    <None Include="Resources\subject_64.png" />
+    <None Include="Resources\defaultsearchimage.png" />
+    <None Include="Resources\warning.ico" />
+    <None Include="Resources\Info3D.ico" />
+    <None Include="Resources\info_ico.ico" />
+    <None Include="Resources\Info.ico" />
+    <None Include="Resources\error.ico" />
+    <None Include="Resources\學生個人獎懲明細.xls" />
+    <None Include="Resources\學生個人缺曠明細.xls" />
+    <None Include="Resources\定期評量班級成績單.xlt" />
+    <None Include="Resources\歷年功過及出席統計.xls" />
+    <None Include="Resources\獎懲通知單.doc" />
+    <None Include="Resources\班級名條.xls" />
+    <None Include="Resources\班級學生獎懲明細.xls" />
+    <None Include="Resources\班級學生缺曠明細.xls" />
+    <None Include="Resources\班級考試成績單.doc" />
+    <None Include="Resources\班級通訊錄.xls" />
+    <None Include="Resources\班級點名表.xls" />
+    <None Include="Resources\缺曠通知單.doc" />
+    <None Include="Resources\缺曠週報表.xls" />
+    <None Include="Resources\離校.gif" />
+    <None Include="Resources\輟學.gif" />
+    <None Include="Resources\畢業.gif" />
+    <None Include="Resources\延修.gif" />
+    <None Include="Resources\刪除.gif" />
+    <None Include="Resources\休學.gif" />
+    <None Include="Resources\一般.gif" />
+    <None Include="Resources\loading5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Others\RibbonBars\Forms\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

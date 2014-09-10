@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BankConfig Name="第一銀行(學雜費帳戶)(學生負擔)" ChainChargeOnus="Payer">
+  <Content SchoolCode="1">
+    <AmountLevel EnterpriseCode="11773" LowerLimit="1" UpperLimit="20000" ShopCharge="10" PostCharge="0"/>
+    <AmountLevel EnterpriseCode="11774" LowerLimit="20001" UpperLimit="40000" ShopCharge="15" PostCharge="0"/>
+    <AmountLevel EnterpriseCode="11775" LowerLimit="40001" UpperLimit="60000" ShopCharge="18" PostCharge="0"/>
+  </Content>
+</BankConfig>

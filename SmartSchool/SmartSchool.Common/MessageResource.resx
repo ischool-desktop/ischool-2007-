@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConnectedError" xml:space="preserve">
+    <value>已在連線狀態，無法執行此動作。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="ConnectFailNoErrorMessage" xml:space="preserve">
+    <value>未連線成功，但未產生錯誤訊息。</value>
+    <comment>AccessPoint</comment>
+  </data>
+  <data name="ConnectionInfoNotInitialize" xml:space="preserve">
+    <value>未初始化連線資訊，無法進行連線動作。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="ConnectOccureUnknowError" xml:space="preserve">
+    <value>要求連接時發生未預期的錯誤。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="ConnectServiceError" xml:space="preserve">
+    <value>連接服務(&lt;%ServiceName%&gt;)內部執行錯誤。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="ConnectToDSNSError" xml:space="preserve">
+    <value>連線到 DSNS 主機錯誤。(&lt;%Url%&gt;)</value>
+    <comment>AccessPoint</comment>
+  </data>
+  <data name="ConvertDSAServerStatusError" xml:space="preserve">
+    <value>將 DSA 狀態代碼(StatusCode)轉型成 DSAServerStatus 列舉錯誤，DSA 回傳狀態不存在於 DSAServerStatus 中。</value>
+    <comment>DSResponse</comment>
+  </data>
+  <data name="CredentialInvalid" xml:space="preserve">
+    <value>登入資訊不正確。</value>
+  </data>
+  <data name="ElementNotFound" xml:space="preserve">
+    <value>指定的元素不存在。</value>
+    <comment>DSXmlHelper</comment>
+  </data>
+  <data name="ElementNullReferenceNotSupport" xml:space="preserve">
+    <value>不可以使用 Null 物件建立物件。</value>
+    <comment>DSXmlHelper</comment>
+  </data>
+  <data name="EmptyXmlDocument" xml:space="preserve">
+    <value>XmlDocument 物件中沒有資料。</value>
+    <comment>DSXmlHelper</comment>
+  </data>
+  <data name="GetDSAResponseError" xml:space="preserve">
+    <value>從 DSA Application 取得回覆文件錯誤。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="GetHttpResponseError" xml:space="preserve">
+    <value>從 HTTP Server 取得 Response 錯誤</value>
+    <comment>XmlUtilities</comment>
+  </data>
+  <data name="GetHTTPResponseStreamError" xml:space="preserve">
+    <value>從 HTTP Response 中取出資料串流錯誤。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="HeaderNameNotValidate" xml:space="preserve">
+    <value>標頭的名稱不合法。(&lt;%Name%&gt;)。</value>
+    <comment>DSEnvelope</comment>
+  </data>
+  <data name="HttpMethodNotSupported" xml:space="preserve">
+    <value>不支援此種 HTTP 方法(&lt;%Method%&gt;)。</value>
+    <comment>XmlUtilities</comment>
+  </data>
+  <data name="MustConnected" xml:space="preserve">
+    <value>必需是連線狀態才能執行此動作。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="NodeTypeNotSupport" xml:space="preserve">
+    <value>不可以使用 XmlNodeType.Element 之外的 XmlNode 建立物件。</value>
+    <comment>DSXmlHelper</comment>
+  </data>
+  <data name="ObjectStatusError" xml:space="preserve">
+    <value>物件狀態不正確，請通知開發人員修正此問題。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="RenewDSAPassportFail" xml:space="preserve">
+    <value>重置(Renew) DSA Passport Token 失敗。</value>
+    <comment>PassportToken</comment>
+  </data>
+  <data name="RenewSecurityTokenFail" xml:space="preserve">
+    <value>重置(Renew) Security Token 失敗。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="RenewSessionIDFail" xml:space="preserve">
+    <value>重新要求 SessionID 失敗。</value>
+    <comment>SessionToken</comment>
+  </data>
+  <data name="RequestPassportError" xml:space="preserve">
+    <value>向主機要求 DSAPassport 時產生錯誤！(&lt;%AuthAccessPoint%&gt;)</value>
+    <comment>DSConnection、PassportToken</comment>
+  </data>
+  <data name="RequestSessionIDFail" xml:space="preserve">
+    <value>向 DSA Application 取得 SessionID 失敗。</value>
+    <comment>SessionToken</comment>
+  </data>
+  <data name="ResolveAccessPointNameFail" xml:space="preserve">
+    <value>傳送「名稱解析」申請文件失敗。</value>
+    <comment>AccessPoint</comment>
+  </data>
+  <data name="ResponseDocumentInvalidate" xml:space="preserve">
+    <value>主機回傳的文件不符DSA規格(訊息：&lt;%ValidMessage%&gt;)。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="SecurityTokenNotSupported" xml:space="preserve">
+    <value>不可以使用此類型的 SecurityToken 進行連線動作。</value>
+    <comment>DSConnection</comment>
+  </data>
+  <data name="SessionServiceNotSupported" xml:space="preserve">
+    <value>向 DSA Application 要求 SessionID，但並未得到 SessionID。(可能是 DSA Server 不支援 Session 功能)</value>
+    <comment>SessionToken</comment>
+  </data>
+  <data name="SpecialHeaderNotFound" xml:space="preserve">
+    <value>指定的標頭不存在(&lt;%Name%&gt;)。</value>
+    <comment>DSEnvelope</comment>
+  </data>
+  <data name="UriPrefixNotSupport" xml:space="preserve">
+    <value>不支援指定的配置識別項(&lt;%Prefix%&gt;)。</value>
+    <comment>AccessPoint</comment>
+  </data>
+  <data name="XmlDocNullReferenceNotSupport" xml:space="preserve">
+    <value>不可以使用 Null 的 XmlDocument 建立物件。</value>
+    <comment>DSXmlHelper</comment>
+  </data>
+  <data name="XmlDocumentNotIsDSDocument" xml:space="preserve">
+    <value>Xml 不符合 DSEnvelope 規格：&lt;%Reason%&gt;</value>
+    <comment>DSEnvelope</comment>
+  </data>
+  <data name="XPathSyntaxError" xml:space="preserve">
+    <value>指定的 XPath 語法錯誤，找不到指定的元素(&lt;%XPath%&gt;)。</value>
+    <comment>DSXmlHelper</comment>
+  </data>
+</root>

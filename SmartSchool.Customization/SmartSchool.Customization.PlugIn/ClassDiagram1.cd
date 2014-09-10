@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="微軟正黑體" Size="9" />
+  <Comment CommentText="外掛自訂內容">
+    <Position X="0.5" Y="0.5" Height="0.358" Width="1.084" />
+  </Comment>
+  <Comment CommentText="外掛設定頁面">
+    <Position X="0.5" Y="7.321" Height="0.358" Width="1.084" />
+  </Comment>
+  <Comment CommentText="外掛報表">
+    <Position X="6.106" Y="7.37" Height="0.358" Width="1.084" />
+  </Comment>
+  <Comment CommentText="外掛右建選單(單一按鈕)">
+    <Position X="11.396" Y="7.42" Height="0.358" Width="1.866" />
+  </Comment>
+  <Comment CommentText="外掛右建選單(自訂的空置項頁面)">
+    <Position X="14.258" Y="7.387" Height="0.524" Width="1.866" />
+  </Comment>
+  <Comment CommentText="外掛資料行">
+    <Position X="9.716" Y="0.5" Height="0.358" Width="1.084" />
+  </Comment>
+  <Comment CommentText="外掛匯出匯入">
+    <Position X="18.466" Y="0.5" Height="0.358" Width="1.084" />
+  </Comment>
+  <Class Name="SmartSchool.Customization.PlugIn.ButtonAdapter">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ButtonAdapter.cs</FileName>
+      <HashCode>AAAACAAAAAAAAQIAAAAAAAACAAAAABQAAAAACgIAAgA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="SmartSchool.Customization.PlugIn.ButtonAdapter.SetBarMessageEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ButtonAdapter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ControlContainer">
+    <Position X="17.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ControlContainer.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAIAAAAAAACAAAAAAAAAAAAAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Configure.ConfigurationItem" BaseTypeListCollapsed="true">
+    <Position X="1" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Configure\ConfigurationItem.cs</FileName>
+      <HashCode>AASAAAAEACBAAAAAAACAAIACAIACBBagCBACAABACAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="captionLabel" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="contentPanel" Hidden="true" />
+      <Field Name="controlPanel" Hidden="true" />
+      <Field Name="flowLayoutPanel1" Hidden="true" />
+      <Field Name="splitter1" Hidden="true" />
+    </Members>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Configure.SystemConfiguration">
+    <Position X="3" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Configure\SystemConfiguration.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAACAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.ClassMenuButton">
+    <Position X="12" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\ClassMenuButton.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.ClassMenuControl">
+    <Position X="14.5" Y="14.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\ClassMenuControl.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.CourseMenuButton">
+    <Position X="12" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\CourseMenuButton.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.CourseMenuControl">
+    <Position X="14.5" Y="10.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\CourseMenuControl.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.StudentMenuButton">
+    <Position X="12" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\StudentMenuButton.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.StudentMenuControl">
+    <Position X="14.5" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\StudentMenuControl.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.TeacherMenuButton">
+    <Position X="12" Y="14.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\TeacherMenuButton.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="catchItems" Type="SmartSchool.Customization.PlugIn.ButtonAdapter" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="15.36" />
+        <Point X="10.625" Y="15.36" />
+        <Point X="10.625" Y="13.372" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ContextMenu.TeacherMenuControl">
+    <Position X="14.5" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ContextMenu\TeacherMenuControl.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedColumn.ExtendClassColumn">
+    <Position X="12.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ExtendedColumn\ExtendClassColumn.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedColumn.ExtendCourseColumn">
+    <Position X="14.25" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ExtendedColumn\ExtendCourseColumn.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedColumn.ExtendStudentColumn">
+    <Position X="16.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ExtendedColumn\ExtendStudentColumn.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedColumn.ExtendTeacherColumn">
+    <Position X="10" Y="5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ExtendedColumn\ExtendTeacherColumn.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedContent.ExtendClassContent">
+    <Position X="0.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ExtendedContent\ExtendClassContent.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedContent.ExtendCourseContent">
+    <Position X="4.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ExtendedContent\ExtendCourseContent.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedContent.ExtendStudentContent">
+    <Position X="2.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ExtendedContent\ExtendStudentContent.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ExtendedContent.ExtendTeacherContent">
+    <Position X="6.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ExtendedContent\ExtendTeacherContent.cs</FileName>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAEAAgAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ExportClass">
+    <Position X="26.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ExportClass.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ExportCourse">
+    <Position X="26.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ExportCourse.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ExportProcess" BaseTypeListCollapsed="true">
+    <Position X="24" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ExportProcess.cs</FileName>
+      <HashCode>AABAAEAAABIAAEABAAAAAAAAAYEAABQAgwACABAAAJA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ExportStudent">
+    <Position X="26.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ExportStudent.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ExportTeacher">
+    <Position X="26.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ExportTeacher.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ImportClass">
+    <Position X="19.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportClass.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ImportCourse">
+    <Position X="19.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportCourse.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ImportProcess" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportProcess.cs</FileName>
+      <HashCode>AABAAEgAEAohCEChAICACAAAQpEGcBQQgAASAAFBABg=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ImportStudent">
+    <Position X="19.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportStudent.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.ImportExport.ImportTeacher">
+    <Position X="19.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportExport\ImportTeacher.cs</FileName>
+      <HashCode>AEAAAQAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.ClassReport">
+    <Position X="6.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Report\ClassReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAAhAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.CourseReport">
+    <Position X="6.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Report\CourseReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAAhAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="catchItems" Type="SmartSchool.Customization.PlugIn.ButtonAdapter" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="16.025" />
+        <Point X="9.438" Y="16.025" />
+        <Point X="9.438" Y="13.372" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.StudentReport">
+    <Position X="6.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Report\StudentReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAAhAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.TeacherReport">
+    <Position X="6.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Report\TeacherReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAAhAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="catchItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="SmartSchool.Customization.PlugIn.Configure.IConfigurationItem">
+    <Position X="3" Y="8" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Configure\IConfigurationItem.cs</FileName>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAABKgCBAAAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.PlugIn.ExtendedColumn.IColumnItem">
+    <Position X="13" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ExtendedColumn\IColumnItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAABAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SmartSchool.Customization.PlugIn.ExtendedContent.IContentItem">
+    <Position X="3.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ExtendedContent\IContentItem.cs</FileName>
+      <HashCode>AAAAAIQIAQAABEACAABAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

@@ -1,0 +1,179 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{865C6CF3-1FBF-4D06-B34B-8FBAEA1F46AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartSchool.Payment.AccountStatedService</RootNamespace>
+    <AssemblyName>SmartSchool.Payment.AccountStatedService</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <StartupObject>SmartSchool.Payment.AccountStatedService.WinProgram</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SmartSchool.Payment.AccountStatedConfig\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IntelliSchool.DSA30.Util, Version=3.2.18.0, Culture=neutral, PublicKeyToken=ae00d3879ab4e918, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\IntelliSchool.DSA30.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ASService.Designer.cs">
+      <DependentUpon>ASService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASServiceModuleSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASServiceModuleSelector.Designer.cs">
+      <DependentUpon>ASServiceModuleSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASServiceConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASServiceConfigForm.Designer.cs">
+      <DependentUpon>ASServiceConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASServiceRunner.cs" />
+    <Compile Include="ASServiceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASServiceStatus.Designer.cs">
+      <DependentUpon>ASServiceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigMain.Designer.cs">
+      <DependentUpon>ConfigMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ASServiceProvider.cs" />
+    <Compile Include="Interfaces\ASServiceConfig.cs" />
+    <Compile Include="Interfaces\ASServiceConfigPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ASServiceConfigPanel.Designer.cs">
+      <DependentUpon>ASServiceConfigPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IAccountStatedService.cs" />
+    <Compile Include="Interfaces\ITransactionBridge.cs" />
+    <Compile Include="PaymentServiceInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinProgram.cs" />
+    <Compile Include="LogWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASServiceModuleSelector.resx">
+      <DependentUpon>ASServiceModuleSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASServiceConfigForm.resx">
+      <DependentUpon>ASServiceConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASServiceStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ASServiceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\ASServiceConfigPanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ASServiceConfigPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASServiceModuleConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Lib\Aspose.BarCode.xml" />
+    <Content Include="Lib\Aspose.Cells.xml" />
+    <Content Include="Lib\Aspose.Grid.Desktop.xml" />
+    <Content Include="Lib\DevComponents.DotNetBar2.xml" />
+    <Content Include="Lib\IntelliSchool.DSA30.Util.dll" />
+    <Content Include="Lib\IntelliSchool.DSA30.Util.pdb" />
+    <Content Include="Lib\IntelliSchool.DSA30.Util.xml" />
+    <Content Include="Lib\SmartSchool.Customization.Data.XML" />
+    <Content Include="Lib\SmartSchool.Customization.PlugIn.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

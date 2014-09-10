@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Customization.Data", "SmartSchool.Customization.Data\SmartSchool.Customization.Data.csproj", "{2370478A-E2FE-4EA4-95A9-26004CEA67FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.Customization.PlugIn", "SmartSchool.Customization.PlugIn\SmartSchool.Customization.PlugIn.csproj", "{D5D2167C-FE85-4555-B69F-052D661C70DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartSchool.API.PlugIn", "SmartSchool.API.PlugIn\SmartSchool.API.PlugIn.csproj", "{35D76BEC-951F-4588-B067-21047A4447A7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfserver.ischool.com.tw:8080/tfs/tfs2008
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SmartSchool.API.PlugIn\\SmartSchool.API.PlugIn.csproj
+		SccProjectName1 = SmartSchool.API.PlugIn
+		SccLocalPath1 = SmartSchool.API.PlugIn
+		SccProjectUniqueName2 = SmartSchool.Customization.Data\\SmartSchool.Customization.Data.csproj
+		SccProjectName2 = SmartSchool.Customization.Data
+		SccLocalPath2 = SmartSchool.Customization.Data
+		SccProjectUniqueName3 = SmartSchool.Customization.PlugIn\\SmartSchool.Customization.PlugIn.csproj
+		SccProjectName3 = SmartSchool.Customization.PlugIn
+		SccLocalPath3 = SmartSchool.Customization.PlugIn
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2370478A-E2FE-4EA4-95A9-26004CEA67FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2370478A-E2FE-4EA4-95A9-26004CEA67FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2370478A-E2FE-4EA4-95A9-26004CEA67FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2370478A-E2FE-4EA4-95A9-26004CEA67FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D2167C-FE85-4555-B69F-052D661C70DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D2167C-FE85-4555-B69F-052D661C70DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D2167C-FE85-4555-B69F-052D661C70DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D2167C-FE85-4555-B69F-052D661C70DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D76BEC-951F-4588-B067-21047A4447A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

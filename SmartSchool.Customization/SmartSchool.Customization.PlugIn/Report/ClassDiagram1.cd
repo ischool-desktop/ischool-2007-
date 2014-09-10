@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="微軟正黑體" Size="9" />
+  <Class Name="SmartSchool.Customization.PlugIn.Report.StudentReport">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>StudentReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.TeacherReport">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>TeacherReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.ClassReport">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ClassReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.CourseReport">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CourseReport.cs</FileName>
+      <HashCode>AAAAAYAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmartSchool.Customization.PlugIn.Report.ButtonAdapter">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ButtonAdapter.cs</FileName>
+      <HashCode>AAAACAAAAAAAAQAAAAAAAAACAAAAABQAAAAACgAAAgA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SmartSchool.Customization.PlugIn.Report.ButtonAdapter.SetBarMessageEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ButtonAdapter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Interface Name="SmartSchool.Customization.PlugIn.Report.IReportManager">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IReportManager.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

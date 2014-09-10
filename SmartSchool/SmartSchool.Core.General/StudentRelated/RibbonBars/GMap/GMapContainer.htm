@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Key¡GABQIAAAAwCn8aMnbSulaC_F2IpOYzhT6vvugz1d21a1iigqtVvS4jHAq6RT1qzA6VF0iKPSXErr3mq1tVUd0lg-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title></title>
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAwCn8aMnbSulaC_F2IpOYzhTOo5rrUAhdjq6fOIKdL0bsfhOBjBQNXOX-c0qgolJrkaSXIkFKDVHPeQ"
+type="text/javascript"></script>
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    var map;
+    function load() 
+    {
+        if (GBrowserIsCompatible()) 
+        {
+            map = new GMap2(document.getElementById("divMap"));
+
+            GEvent.addListener(map,"load",function() { window.external.RaiseGMapComplete(); } );
+            GEvent.addListener(map,"moveend",function(){window.external.RaiseGMapMoved();});
+
+            map.addControl(new GSmallMapControl());
+		    map.addControl(new GMapTypeControl());
+
+            map.setCenter(new GLatLng(23.921702,120.680810),11);
+        }       
+    }
+    
+    function ssCreateMark(lat,lng,studentid)
+    {
+        var point=new GLatLng(lat, lng);
+        //var marker = new GMarker(point, {draggable : true});  
+        var marker = new GMarker(point);  
+
+    	GEvent.addListener(marker, "click", function()
+            {
+                var html=window.external.WindowInfoRequire(studentid);
+                marker.openInfoWindowHtml(html);
+            }
+    	); 
+
+        map.addOverlay(marker);
+        //marker.enableDragging;
+
+    	return marker;
+    }
+    
+    function ssSetMarkImage(marker,url)
+    {
+        marker.setImage(url);
+    }
+
+    function ssPanToMarker(marker)
+    {
+        var point=marker.getPoint();
+        map.panTo(point);
+    }
+     
+    function ssPanToPoint(lat,lng)
+    {
+        var latlng=new GLatLng(lat,lng);
+        map.panTo(latlng);
+    }
+
+    function ssIsInBound(mark)
+    {
+        var bounds=map.getBounds();
+        return bounds.containsLatLng(mark.getPoint());
+    }
+
+    function ssSetMapSize(height,width)
+    {
+        try{
+            divMap.style.left=0;
+            divMap.style.top=0;
+            divMap.style.height=height;
+            divMap.style.width=width;
+            map.checkResize();
+        }catch(ex){}
+    }
+
+    function ssOpenInfoWindow(marker,html)
+    {
+        marker.openInfoWindowHtml(html);
+    }
+    //]]>
+</script>
+
+</head>
+<body onload="load()">
+<form runat="server" action="">
+<div id="divMap" style="position: absolute; left: 0; top: 0; width: 800px; height: 600px" />
+</form>
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5D2167C-FE85-4555-B69F-052D661C70DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartSchool.Customization.PlugIn</RootNamespace>
+    <AssemblyName>SmartSchool.Customization.PlugIn</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\SmartSchool.Customization.PlugIn.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\SmartSchool.Customization.PlugIn.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonAdapter.cs" />
+    <Compile Include="Configure\ConfigurationItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configure\ConfigurationItem.Designer.cs">
+      <DependentUpon>ConfigurationItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configure\IConfigurationItem.cs" />
+    <Compile Include="Configure\IConfigurationManager.cs" />
+    <Compile Include="Configure\SystemConfiguration.cs" />
+    <Compile Include="ContextMenu\ClassMenuButton.cs" />
+    <Compile Include="ContextMenu\ClassMenuControl.cs" />
+    <Compile Include="ContextMenu\CourseMenuButton.cs" />
+    <Compile Include="ContextMenu\CourseMenuControl.cs" />
+    <Compile Include="ContextMenu\StudentMenuButton.cs" />
+    <Compile Include="ContextMenu\StudentMenuControl.cs" />
+    <Compile Include="ContextMenu\TeacherMenuButton.cs" />
+    <Compile Include="ContextMenu\TeacherMenuControl.cs" />
+    <Compile Include="ControlContainer.cs" />
+    <Compile Include="ExtendedColumn\ExtendClassColumn.cs" />
+    <Compile Include="ExtendedColumn\IColumnItem.cs" />
+    <Compile Include="ExtendedColumn\ExtendTeacherColumn.cs" />
+    <Compile Include="ExtendedColumn\ExtendCourseColumn.cs" />
+    <Compile Include="ExtendedColumn\ExtendStudentColumn.cs" />
+    <Compile Include="ExtendedContent\ExtendStudentContent.cs" />
+    <Compile Include="ExtendedContent\IContentItem.cs" />
+    <Compile Include="ExtendedContent\ExtendTeacherContent.cs" />
+    <Compile Include="ExtendedContent\ExtendCourseContent.cs" />
+    <Compile Include="ExtendedContent\ExtendClassContent.cs" />
+    <Compile Include="GeneralizationPluhgInManager.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="IManager.cs" />
+    <Compile Include="ImportExport\BeginValidateEventArgs.cs" />
+    <Compile Include="ImportExport\DataImportEventArgs.cs" />
+    <Compile Include="ImportExport\ExportPackageEventArgs.cs" />
+    <Compile Include="ImportExport\ExportProcess.cs" />
+    <Compile Include="ImportExport\ExportStudent.cs" />
+    <Compile Include="ImportExport\HasEventList.cs" />
+    <Compile Include="ImportExport\ImportProcess.cs" />
+    <Compile Include="ImportExport\ImportStudent.cs" />
+    <Compile Include="ImportExport\RowData.cs" />
+    <Compile Include="ImportExport\RowDataValidatedEventArgs.cs" />
+    <Compile Include="ImportExport\ExportTeacher.cs" />
+    <Compile Include="ImportExport\ImportTeacher.cs" />
+    <Compile Include="ImportExport\ExportCourse.cs" />
+    <Compile Include="ImportExport\ImportCourse.cs" />
+    <Compile Include="ImportExport\ExportClass.cs" />
+    <Compile Include="ImportExport\ImportClass.cs" />
+    <Compile Include="Report\ClassReport.cs" />
+    <Compile Include="Report\CourseReport.cs" />
+    <Compile Include="Report\IReportManager.cs" />
+    <Compile Include="MainMethodAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\StudentReport.cs" />
+    <Compile Include="Report\TeacherReport.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Report\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Configure\ConfigurationItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigurationItem.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
